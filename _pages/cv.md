@@ -42,9 +42,3 @@ author_profile: true
 - **PLOS Neglected Tropical Diseases** — Editorial Board Member (2024–present)
 - Reviewer for over 250 peer-reviewed manuscripts ([Publons profile](https://publons.com/researcher/781710/andrei-r-akhmetzhanov/))
 
----
-
-## Selected Metrics
-
-Total publications: 74 · *h*-index: 24 · Publications with >10 citations: 38  
-([Google Scholar profile](https://scholar.google.com/citations?user=TKQyHlMAAAAJ))
