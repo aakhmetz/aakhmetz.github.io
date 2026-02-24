@@ -1,0 +1,159 @@
+# Publications list for Andrei R. Akhmetzhanov (吳亞克)
+# Format: Vancouver citation style, sorted by year (newest first)
+# "Akhmetzhanov AR" is automatically bolded in the publications template
+# Note: This list is partial. Full list at https://scholar.google.com/citations?user=TKQyHlMAAAAJ
+
+# 2024
+- authors: "Charniga K, Park SW, Akhmetzhanov AR, Breman JG, Drakeley C, Griffiths ME, Johansson MA, Lessler J, Linton NM, Nishiura H, Plowright RK, Schneider ZD, Wasserheit JN, Cauchemez S, Dushoff J"
+  title: "Best practices for estimating and reporting epidemiological delay distributions of infectious diseases using public health surveillance and healthcare data"
+  journal: "PLOS Comput Biol"
+  year: 2024
+  volume: 20
+  issue: 10
+  pages: "e1012520"
+  doi: "10.1371/journal.pcbi.1012520"
+
+# 2023
+- authors: "Park SW, Akhmetzhanov AR, Champredon D, Earn DJD, Li M, Weitz JS, Dushoff J, Bolker BM"
+  title: "Inferring the differences in incubation-period and generation-interval distributions of the Delta and Omicron variants of SARS-CoV-2"
+  journal: "Proc Natl Acad Sci U S A"
+  year: 2023
+  volume: 120
+  issue: 15
+  pages: "e2221887120"
+  doi: "10.1073/pnas.2221887120"
+
+- authors: "Akhmetzhanov AR, Cheng HY, Linton NM"
+  title: "Estimating the Incubation Period of Omicron: Shorter, But Not Short Enough to Stop Spread"
+  journal: "J Travel Med"
+  year: 2023
+  volume: 30
+  issue: 3
+  pages: "taad021"
+  doi: "10.1093/jtm/taad021"
+
+# 2021
+- authors: "Akhmetzhanov AR, Jung SM, Cheng HY, Thompson RN"
+  title: "A recreation of the Imperial College COVID-19 model"
+  journal: "PLOS Comput Biol"
+  year: 2021
+  volume: 17
+  issue: 7
+  pages: "e1009174"
+  doi: "10.1371/journal.pcbi.1009174"
+
+- authors: "Akhmetzhanov AR, Cheng HY, Linton NM, Ponce L, Deryabina E, Huang AS"
+  title: "Transmission dynamics and real-time estimates of the effective reproduction number of COVID-19 in Taiwan using surveillance data"
+  journal: "Int J Infect Dis"
+  year: 2021
+  volume: 110
+  pages: "9-17"
+  doi: "10.1016/j.ijid.2021.07.022"
+
+- authors: "Akhmetzhanov AR, Kinoshita R, Miyama T, Nishiura H"
+  title: "Reconstruction of the transmission trajectory of the COVID-19 epidemics in a Japanese island cluster"
+  journal: "Sci Rep"
+  year: 2021
+  volume: 11
+  issue: 1
+  pages: "17115"
+  doi: "10.1038/s41598-021-96511-8"
+
+# 2020
+- authors: "Nishiura H, Linton NM, Akhmetzhanov AR"
+  title: "Serial interval of novel coronavirus (COVID-19) infections"
+  journal: "Int J Infect Dis"
+  year: 2020
+  volume: 93
+  pages: "284-286"
+  doi: "10.1016/j.ijid.2020.02.060"
+
+- authors: "Nishiura H, Kobayashi T, Miyama T, Suzuki A, Jung SM, Hayashi K, Kinoshita R, Yang Y, Yuan B, Akhmetzhanov AR, Linton NM"
+  title: "Estimation of the asymptomatic ratio of novel coronavirus infections (COVID-19)"
+  journal: "Int J Infect Dis"
+  year: 2020
+  volume: 94
+  pages: "154-155"
+  doi: "10.1016/j.ijid.2020.03.020"
+
+- authors: "Linton NM, Kobayashi T, Yang Y, Hayashi K, Akhmetzhanov AR, Jung SM, Yuan B, Kinoshita R, Nishiura H"
+  title: "Incubation Period and Other Epidemiological Characteristics of 2019 Novel Coronavirus Infections with Right Truncation: A Statistical Analysis of Publicly Available Case Data"
+  journal: "J Clin Med"
+  year: 2020
+  volume: 9
+  issue: 2
+  pages: "538"
+  doi: "10.3390/jcm9020538"
+
+- authors: "Nishiura H, Linton NM, Akhmetzhanov AR"
+  title: "Initial cluster of novel coronavirus (2019-nCoV) infections in Wuhan, China is consistent with substantial human-to-human transmission"
+  journal: "J Clin Med"
+  year: 2020
+  volume: 9
+  issue: 2
+  pages: "488"
+  doi: "10.3390/jcm9020488"
+
+- authors: "Nishiura H, Kobayashi T, Yang Y, Hayashi K, Miyama T, Kinoshita R, Linton NM, Jung SM, Yuan B, Suzuki A, Akhmetzhanov AR"
+  title: "The Rate of Underascertainment of Novel Coronavirus (2019-nCoV) Infection: Estimation Using Japanese Passengers Data on Evacuation Flights"
+  journal: "J Clin Med"
+  year: 2020
+  volume: 9
+  issue: 2
+  pages: "419"
+  doi: "10.3390/jcm9020419"
+
+- authors: "Akhmetzhanov AR, Mizumoto K, Jung SM, Linton NM, Kinoshita R, Nishiura H"
+  title: "Estimation of the Actual Incidence of Coronavirus Disease (COVID-19) in Emerged Countries/Territories in Europe, the United States, and Canada"
+  journal: "J Clin Med"
+  year: 2020
+  volume: 9
+  issue: 6
+  pages: "1744"
+  doi: "10.3390/jcm9061744"
+
+- authors: "Akhmetzhanov AR, Lee H, Jung SM, Kinoshita R, Shimizu K, Nishiura H"
+  title: "Real-time Estimation of the Risk of Death from Novel Coronavirus (COVID-19) Infection: Inference Using Exported Cases"
+  journal: "J Clin Med"
+  year: 2020
+  volume: 9
+  issue: 2
+  pages: "523"
+  doi: "10.3390/jcm9020523"
+
+- authors: "Anzai A, Kobayashi T, Linton NM, Kinoshita R, Hayashi K, Suzuki A, Yang Y, Jung SM, Miyama T, Akhmetzhanov AR, Nishiura H"
+  title: "Assessing the Impact of Reduced Travel on Exportation Dynamics of Novel Coronavirus Infection (COVID-19)"
+  journal: "J Clin Med"
+  year: 2020
+  volume: 9
+  issue: 2
+  pages: "601"
+  doi: "10.3390/jcm9020601"
+
+- authors: "Mizumoto K, Kagaya K, Zarebski A, Chowell G, Akhmetzhanov AR"
+  title: "Estimating the asymptomatic proportion of coronavirus disease 2019 (COVID-19) cases on board the Diamond Princess cruise ship, Yokohama, Japan, 2020"
+  journal: "Euro Surveill"
+  year: 2020
+  volume: 25
+  issue: 10
+  pages: "2000180"
+  doi: "10.2807/1560-7917.ES.2020.25.10.2000180"
+
+- authors: "Akhmetzhanov AR, Nishiura H"
+  title: "Risks of Global Importation and Community Spread of COVID-19 from Southeast Asia"
+  journal: "J Travel Med"
+  year: 2020
+  volume: 27
+  issue: 3
+  pages: "taaa044"
+  doi: "10.1093/jtm/taaa044"
+
+# 2019
+- authors: "Akhmetzhanov AR, Nishiura H"
+  title: "Quantifying the seasonal drivers of transmission for Dengue fever in Bangkok"
+  journal: "Proc R Soc B"
+  year: 2019
+  volume: 286
+  issue: 1898
+  pages: "20190136"
+  doi: "10.1098/rspb.2019.0136"
