@@ -6,8 +6,6 @@ redirect_from:
   - /about.html
 ---
 
-## Epidemiological investigation group @ NTU CPH
-
 <div style="border: 1px solid #90caf9; border-radius: 6px; padding: 0.8em 1.2em; margin-bottom: 1.5em; background-color: #e8f0fe;">
 <p style="color: #1565c0; font-weight: bold;">Welcome</p>
 <p>I am an applied mathematician working in epidemiology, with a focus on data-driven modeling of infectious diseases. My research centers on real-time analysis of emerging outbreaks, transmission dynamics, and statistical inference for both infectious and non-communicable diseases. I am also interested in the interplay between mathematical modeling and public health policy.</p>
