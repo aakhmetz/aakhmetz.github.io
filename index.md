@@ -21,7 +21,7 @@ redirect_from:
 </p>
 </div>
 
-### News
+## News
 
 - [2025-08] Promoted to Associate Professor at National Taiwan University.
 - [2024-02] Poster presented at the 34th Annual meeting of the Japanese Epidemiological Association, Otsu City, Japan.
