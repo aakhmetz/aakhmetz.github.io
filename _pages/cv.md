@@ -1,64 +1,42 @@
 ---
-layout: archive
-title: "CV"
 permalink: /cv/
+title: "CV – Andrei R. Akhmetzhanov (吳亞克)"
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
-{% include base_path %}
+## Academic Positions
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+| Period | Position | Institution |
+|--------|----------|-------------|
+| 2025 – present | Associate Professor | Global Health Program &amp; Institute of Epidemiology and Preventive Medicine, National Taiwan University |
+| 2020 – 2025 | Assistant Professor (tenure-track) | Global Health Program, National Taiwan University |
+| 2019 – 2020 | Assistant Professor | Graduate School of Medicine, Hokkaido University, Japan |
+| 2017 – 2020 | Postdoctoral Fellow | Graduate School of Medicine, Hokkaido University, Japan |
+| 2015 – 2016 | Postdoctoral Fellow | Institute of Statistical Sciences, Academia Sinica, Taiwan |
+| 2012 – 2014 | Postdoctoral Researcher | Institute of Evolutionary Sciences, University of Montpellier 2, France |
+| 2011 – 2012 | Postdoctoral Fellow | Department of Mathematics and Statistics, McMaster University, Canada |
+| 2011 | Postdoctoral Fellow | Department of Biology, McMaster University, Canada |
+| 2009 – 2011 | Postdoctoral Fellow | BIOCORE team, Inria Sophia Antipolis-Méditerranée, France |
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Education
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+| Period | Degree | Institution |
+|--------|--------|-------------|
+| 2006 – 2009 | Ph.D. in Mathematics and Physics | Moscow Institute of Physics and Technology, Russia |
+| 2000 – 2006 | B.Sc., M.Sc. in Applied Mathematics and Physics (with Honors) | Moscow Institute of Physics and Technology, Russia |
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Awards and Recognition
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- 2023 National Taiwan University Excellent Teaching Award
+- B.Sc., M.Sc. Diploma with Honors, Moscow Institute of Physics and Technology
+
+## Editorial Service
+
+- **BMC Medicine** — Editorial Board Member (2022–present)
+- **PLOS Neglected Tropical Diseases** — Editorial Board Member (2024–present)
+- Reviewer for over 250 peer-reviewed manuscripts (<a href="https://publons.com/researcher/781710/andrei-r-akhmetzhanov/">Publons profile</a>)
+
+## Selected Metrics
+
+Total publications: 74 · *h*-index: 24 · Publications with &gt;10 citations: 38  
+(<a href="https://scholar.google.com/citations?user=TKQyHlMAAAAJ">Google Scholar profile</a>)
