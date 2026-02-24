@@ -23,7 +23,8 @@ repository               : "aakhmetz/aakhmetz.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Andrei R. Akhmetzhanov (吳亞克)"
+  name             : "Andrei R. Akhmetzhanov"
+  chinese_name     : "吳亞克"
   pronouns         :
   bio              : "Associate Professor in epidemiology and mathematical modeling at National Taiwan University"
   location         : "Taipei, Taiwan"
