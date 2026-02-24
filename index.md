@@ -10,11 +10,11 @@ redirect_from:
 <h2>Welcome</h2>
 <p>I am an applied mathematician working in epidemiology, with a focus on data-driven modeling of infectious diseases. My research centers on real-time analysis of emerging outbreaks, transmission dynamics, and statistical inference for both infectious and non-communicable diseases. I am also interested in the interplay between mathematical modeling and public health policy.</p>
 
-<p>I am currently an Associate Professor in the <a href="https://globalhealth.cph.ntu.edu.tw/">Global Health Program</a> and the <a href="https://www.ieph.ntu.edu.tw/">Institute of Epidemiology and Preventive Medicine</a>, College of Public Health, National Taiwan University, Taipei, Taiwan. I also serve as a consultant at the Epidemic Intelligence Center, Taiwan Centers for Disease Control.</p>
+<p>I am currently an Associate Professor in the <a href="https://ghp.ntu.edu.tw/">Global Health Program</a> and the <a href="https://epm.ntu.edu.tw/web/index/index.jsp">Institute of Epidemiology and Preventive Medicine</a>, College of Public Health, National Taiwan University, Taipei, Taiwan. I also serve as a consultant at the Epidemic Intelligence Center, Taiwan Centers for Disease Control.</p>
 
 <p>
 <strong>Email:</strong> akhmetzhanov [at] ntu.edu.tw<br>
-<strong>Phone:</strong> +886-2-3366-XXXX<br>
+<strong>Phone:</strong> +886-2-3366-8037br>
 <strong>Address:</strong> Room 537, 17 Xu-Zhou Rd, Zhongzheng Dist, Taipei 10055, Taiwan
 </p>
 </div>
