@@ -11,26 +11,19 @@ author_profile: true
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<p><em>Total number of publications: 74; <strong>h</strong>-index: 24; publications with citation count above ten: 38</em></p>
 
+<h2>Original Research (Last 5 Years)</h2>
 
-
+<ol class="pub-list">
+{% for pub in site.data.publications %}
+  <li>
+    {% assign highlighted = pub.authors | replace: "Akhmetzhanov AR", "<strong>Akhmetzhanov AR</strong>" %}
+    {{ highlighted }}.
+    {{ pub.title }}.
+    <em>{{ pub.journal }}</em>.
+    {{ pub.year }}{% if pub.volume and pub.volume != "" %};{{ pub.volume }}{% if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}{% if pub.pages and pub.pages != "" %}:{{ pub.pages }}{% endif %}{% endif %}.
+    doi: <a href="https://doi.org/{{ pub.doi }}">{{ pub.doi }}</a>
+  </li>
+{% endfor %}
+</ol>
