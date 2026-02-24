@@ -7,12 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-[Publications](/publications/) &nbsp;\|&nbsp; [Talks](/talks/) &nbsp;\|&nbsp; [Research Interests](/research/) &nbsp;\|&nbsp; [CV](/cv/) &nbsp;\|&nbsp; [My Group](/group/) &nbsp;\|&nbsp; [Opportunities](/opportunities/)
-
----
-
-<div style="border: 1px solid #ccc; border-radius: 6px; padding: 1.2em 1.5em; margin-bottom: 1.5em; background-color: #f9f9f9;">
-
+<div style="border: 1px solid #90caf9; border-radius: 6px; padding: 0.8em 1.2em; margin-bottom: 1.5em; background-color: #e8f0fe;">
 <h3>Welcome</h3>
 
 <p>I am an applied mathematician working in epidemiology, with a focus on data-driven modeling of infectious diseases. My research centers on real-time analysis of emerging outbreaks, transmission dynamics, and statistical inference for both infectious and non-communicable diseases. I am also interested in the interplay between mathematical modeling and public health policy.</p>
