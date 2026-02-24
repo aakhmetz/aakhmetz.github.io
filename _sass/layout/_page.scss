@@ -441,3 +441,16 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.welcome-box {
+  border: 1px solid #90caf9;
+  border-radius: 6px;
+  padding: 0.8em 1.2em;
+  margin-bottom: 1.5em;
+  background-color: #e8f0fe;
+}
+
+html[data-theme="dark"] .welcome-box {
+  background-color: rgba(144, 202, 249, 0.08);
+  border-color: rgba(144, 202, 249, 0.3);
+}
