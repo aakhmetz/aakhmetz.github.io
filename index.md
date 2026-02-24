@@ -1,6 +1,5 @@
 ---
 permalink: /
-title: "Welcome"
 author_profile: true
 redirect_from:
   - /about/
@@ -8,6 +7,7 @@ redirect_from:
 ---
 
 <div style="border: 1px solid #90caf9; border-radius: 6px; padding: 0.8em 1.2em; margin-bottom: 1.5em; background-color: #e8f0fe;">
+<h2>Welcome</h2>
 <p>I am an applied mathematician working in epidemiology, with a focus on data-driven modeling of infectious diseases. My research centers on real-time analysis of emerging outbreaks, transmission dynamics, and statistical inference for both infectious and non-communicable diseases. I am also interested in the interplay between mathematical modeling and public health policy.</p>
 
 <p>I am currently an Associate Professor in the <a href="https://globalhealth.cph.ntu.edu.tw/">Global Health Program</a> and the <a href="https://www.ieph.ntu.edu.tw/">Institute of Epidemiology and Preventive Medicine</a>, College of Public Health, National Taiwan University, Taipei, Taiwan. I also serve as a consultant at the Epidemic Intelligence Center, Taiwan Centers for Disease Control.</p>
