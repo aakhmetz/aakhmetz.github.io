@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Andrei R. Akhmetzhanov"
+title                    : "Andrei R. Akhmetzhanov (吳亞克)"
 title_separator          : "-"
-name                     : &name "Andrei R. Akhmetzhanov"
+name                     : &name "Andrei R. Akhmetzhanov (吳亞克)"
 description              : &description "Associate Professor, Global Health Program, National Taiwan University"
 url                      : https://aakhmetz.github.io
 baseurl                  : ""
@@ -23,7 +23,7 @@ repository               : "aakhmetz/aakhmetz.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Andrei R. Akhmetzhanov"
+  name             : "Andrei R. Akhmetzhanov (吳亞克)"
   pronouns         :
   bio              : "Associate Professor in epidemiology and mathematical modeling at National Taiwan University"
   location         : "Taipei, Taiwan"
