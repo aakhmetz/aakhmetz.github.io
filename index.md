@@ -6,7 +6,7 @@ redirect_from:
   - /about.html
 ---
 
-## Epidemiological investigation group
+## Epidemiological investigation group @ NTU CPH
 
 <div style="border: 1px solid #90caf9; border-radius: 6px; padding: 0.8em 1.2em; margin-bottom: 1.5em; background-color: #e8f0fe;">
 <p style="color: #1565c0; font-weight: bold;">Welcome</p>
