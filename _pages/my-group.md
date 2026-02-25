@@ -10,11 +10,11 @@ author_profile: true
 <div class="group-members">
   <div class="member-profile">
     <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 1" class="member-avatar">
-    <p class="member-name">Member 1</p>
+    <p class="member-name">Teresa Lo<br>Administrative Assistant</p>
   </div>
   <div class="member-profile">
     <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 2" class="member-avatar">
-    <p class="member-name">Member 2</p>
+    <p class="member-name">Bianca de Padua<br>Research Assistant, MSc 2025</p>
   </div>
   <div class="member-profile">
     <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 3" class="member-avatar">
@@ -52,5 +52,6 @@ author_profile: true
 
 ## Alumni
 
-- Luis Ponce
+- Gillian Cheng (Research and Administrative Assistant, 2023.09 - 2026.03)
+- Luis Ponce (MSc 2023; doctoral program @ Nanyang Technological University, Singapore, since 2024)
 
