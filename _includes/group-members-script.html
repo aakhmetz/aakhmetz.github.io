@@ -1,0 +1,19 @@
+{% comment %}Activates the member popups; include once, after the last group-members.html include.{% endcomment %}
+<div class="member-dialogs-script">
+<script>
+(function () {
+  var cards = document.querySelectorAll('.person--clickable');
+  Array.prototype.forEach.call(cards, function (card) {
+    var dlg = document.getElementById(card.getAttribute('data-member'));
+    if (!dlg || typeof dlg.showModal !== 'function') { return; }
+    var open = function () { dlg.showModal(); };
+    card.addEventListener('click', open);
+    card.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
+    });
+    dlg.querySelector('.member-dialog__close').addEventListener('click', function () { dlg.close(); });
+    dlg.addEventListener('click', function (e) { if (e.target === dlg) { dlg.close(); } });
+  });
+})();
+</script>
+</div>

@@ -1,6 +1,6 @@
 ---
 permalink: /cv/
-title: "CV – Andrei R. Akhmetzhanov (吳亞克)"
+title: "CV"
 author_profile: true
 ---
 

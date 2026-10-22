@@ -1,0 +1,21 @@
+{% comment %}
+Alumni list for the people page, rendered as compact rounded rows from the
+"alumni" list in _data/members.yml. Fields: name, role, details, photo (optional).
+{% endcomment %}
+{% assign alumni = site.data.members.alumni %}
+{% if alumni and alumni.size > 0 %}
+<h2 class="people-heading" id="alumni">Alumni</h2>
+<div class="alumni-grid">
+{% for m in alumni %}
+{% if m.photo and m.photo != "" %}{% assign photo = "/images/" | append: m.photo %}{% else %}{% assign photo = "/images/member-placeholder.svg" %}{% endif %}
+  <div class="alumnus">
+    <img src="{{ photo }}" alt="" class="alumnus__avatar" loading="lazy">
+    <div class="alumnus__text">
+      <span class="alumnus__name">{% if m.chinese_name %}<span class="person__cjk">{{ m.chinese_name }}</span> {% endif %}{{ m.name }}</span>
+      <span class="alumnus__role">{{ m.role }}</span>
+      {% if m.details and m.details != "" %}<span class="alumnus__details">{{ m.details }}</span>{% endif %}
+    </div>
+  </div>
+{% endfor %}
+</div>
+{% endif %}

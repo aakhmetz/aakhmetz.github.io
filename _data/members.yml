@@ -1,7 +1,8 @@
 # People shown on /my-group/ (rendered by _pages/my-group.md).
 #
-# Add a person as one entry under "current" or "alumni"; the page lists them in
-# the order given here. Fields:
+# Add a person as one entry under "current", "friends" (students advised by
+# other faculty who take part in the group), "on_leave" or "alumni"; each
+# section lists people in the order given here. Fields:
 #   name     full name as it should appear
 #   role     position (e.g. "PhD student, Global Health Program")
 #   details  optional second line (degree and year, current position, topic)
@@ -58,10 +59,6 @@ current:
     favorite_food: "mashed potato"
     favorite_quote: "Carpe diem. Seize the day. Make your lives extraordinary."
     quote_source: "Dead Poets Society"
-  - name: "Nature Huang"
-    role: "MSc student, Institute of Health Data Analytics and Statistics"
-    details: "In the group since 2024; advised by Prof. Tzu-Pin Lu"
-    photo: ""
   - name: "Aaron Arizala"
     role: "MSc student, Global Health Program"
     details: "Since 2026"
@@ -70,14 +67,22 @@ current:
     role: "MSc student, Global Health Program"
     details: "Since 2026"
     photo: ""
+
+friends:
+  - name: "Nature Huang"
+    role: "MSc student, Institute of Health Data Analytics and Statistics"
+    details: "In the group since 2024; advised by Prof. Tzu-Pin Lu"
+    photo: ""
   - name: "Marian Yeh"
     role: "MSc student, Institute of Health Data Analytics and Statistics"
-    details: "Since 2026; administrative assistant"
+    details: "In the group since 2026; administrative assistant; advised by Prof. Anne Feng"
     photo: ""
   - name: "Andy Chu"
     role: "Research collaborator"
     details: "Former undergraduate student, Department of Public Health; in the group since 2023"
     photo: ""
+
+on_leave:
   - name: "Tim Hsiao"
     role: "MSc student, Institute of Health Data Analytics and Statistics"
     details: "Since 2024; currently on exchange at Kyoto University"

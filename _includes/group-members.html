@@ -1,28 +1,36 @@
 {% comment %}
-Member cards for /my-group/, rendered from _data/members.yml.
-A card whose entry has a bio, hobbies, favorite_food or favorite_quote opens a
-popup window (native <dialog>) when clicked. No plugins or libraries needed.
+One section of the people page, rendered from a list in _data/members.yml:
+  {% include group-members.html group="current" title="Current members" note="optional line under the heading" %}
+A person whose entry has a bio, hobbies, favorite_food or favorite_quote opens
+a popup window (native <dialog>) when clicked. Include group-members-script.html
+once at the end of the page to activate the popups.
 {% endcomment %}
-<div class="group-members">
-{% for m in site.data.members.current %}
+{% assign people = site.data.members[include.group] %}
+{% if people and people.size > 0 %}
+<h2 class="people-heading" id="{{ include.group | replace: "_", "-" }}">{{ include.title }}</h2>
+{% if include.note %}<p class="people-note">{{ include.note }}</p>{% endif %}
+<div class="people-grid">
+{% for m in people %}
 {% assign has_popup = false %}{% if m.bio or m.hobbies or m.favorite_food or m.favorite_quote %}{% assign has_popup = true %}{% endif %}
 {% if m.photo and m.photo != "" %}{% assign photo = "/images/" | append: m.photo %}{% else %}{% assign photo = "/images/member-placeholder.svg" %}{% endif %}
-  <div class="member-profile{% if has_popup %} member-profile--clickable{% endif %}"{% if has_popup %} data-member="member-{{ forloop.index }}" role="button" tabindex="0" aria-haspopup="dialog" title="More about {{ m.name }}"{% endif %}>
-    <img src="{{ photo }}" alt="{{ m.name }}" class="member-avatar" loading="lazy">
-    <p class="member-name">{{ m.name }}<br><span class="member-role">{{ m.role }}</span>{% if m.details and m.details != "" %}<br><span class="member-role">{{ m.details }}</span>{% endif %}{% if has_popup %}<br><span class="member-more">more &rsaquo;</span>{% endif %}</p>
+  <div class="person{% if has_popup %} person--clickable{% endif %}"{% if has_popup %} data-member="member-{{ include.group }}-{{ forloop.index }}" role="button" tabindex="0" aria-haspopup="dialog" title="More about {{ m.name }}"{% endif %}>
+    <img src="{{ photo }}" alt="{{ m.name }}" class="person__avatar" loading="lazy">
+    <p class="person__name">{% if m.chinese_name %}<span class="person__cjk">{{ m.chinese_name }}</span> {% endif %}{{ m.name }}</p>
+    <p class="person__role">{{ m.role }}</p>
+    {% if m.details and m.details != "" %}<p class="person__details">{{ m.details }}</p>{% endif %}
   </div>
 {% endfor %}
 </div>
 
 <div class="member-dialogs">
-{% for m in site.data.members.current %}
+{% for m in people %}
 {% if m.bio or m.hobbies or m.favorite_food or m.favorite_quote %}
 {% if m.photo and m.photo != "" %}{% assign photo = "/images/" | append: m.photo %}{% else %}{% assign photo = "/images/member-placeholder.svg" %}{% endif %}
-  <dialog class="member-dialog" id="member-{{ forloop.index }}" aria-labelledby="member-{{ forloop.index }}-name">
+  <dialog class="member-dialog" id="member-{{ include.group }}-{{ forloop.index }}" aria-labelledby="member-{{ include.group }}-{{ forloop.index }}-name">
     <div class="member-dialog__body">
       <button class="member-dialog__close" type="button" aria-label="Close">&times;</button>
       <img src="{{ photo }}" alt="" class="member-dialog__photo">
-      <h3 class="member-dialog__name" id="member-{{ forloop.index }}-name">{{ m.name }}{% if m.chinese_name %} <span class="member-dialog__cjk">{{ m.chinese_name }}</span>{% endif %}</h3>
+      <h3 class="member-dialog__name" id="member-{{ include.group }}-{{ forloop.index }}-name">{{ m.name }}{% if m.chinese_name %} <span class="member-dialog__cjk">{{ m.chinese_name }}</span>{% endif %}</h3>
       <p class="member-dialog__role">{{ m.role }}{% if m.details and m.details != "" %} &middot; {{ m.details }}{% endif %}</p>
       {% if m.bio %}<p class="member-dialog__bio">{{ m.bio }}</p>{% endif %}
       {% if m.hobbies or m.favorite_food or m.favorite_quote %}
@@ -36,20 +44,5 @@ popup window (native <dialog>) when clicked. No plugins or libraries needed.
   </dialog>
 {% endif %}
 {% endfor %}
-<script>
-(function () {
-  var cards = document.querySelectorAll('.member-profile--clickable');
-  Array.prototype.forEach.call(cards, function (card) {
-    var dlg = document.getElementById(card.getAttribute('data-member'));
-    if (!dlg || typeof dlg.showModal !== 'function') { return; }
-    var open = function () { dlg.showModal(); };
-    card.addEventListener('click', open);
-    card.addEventListener('keydown', function (e) {
-      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
-    });
-    dlg.querySelector('.member-dialog__close').addEventListener('click', function () { dlg.close(); });
-    dlg.addEventListener('click', function (e) { if (e.target === dlg) { dlg.close(); } });
-  });
-})();
-</script>
 </div>
+{% endif %}
