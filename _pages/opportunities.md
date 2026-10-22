@@ -7,8 +7,6 @@ author_profile: true
 
 We welcome NTU students who want to learn how infectious disease outbreaks are analyzed with quantitative methods. Everyone in the group works on real outbreak data from the start, usually on questions that come directly from public health agencies. Group meetings are in English, and members come from the Global Health Program, the Institute of Epidemiology and Preventive Medicine, the Institute of Health Data Analytics and Statistics and the Department of Public Health.
 
-We do not have funded positions for postdoctoral researchers or external research assistants, and we do not run an open program for visiting researchers. Visits are arranged directly with colleagues we already work with (see below).
-
 ## Graduate students at NTU
 
 Master's and doctoral students join through the [Global Health Program](https://ghp.ntu.edu.tw/) (taught in English; see the [MSc](https://ghp.ntu.edu.tw/course/master) and [PhD](https://ghp.ntu.edu.tw/course/phd) pages and the [application instructions](https://ghp.ntu.edu.tw/credit/master_degree)), the [Institute of Epidemiology and Preventive Medicine](https://epm.ntu.edu.tw/web/index/index.jsp) or the Institute of Health Data Analytics and Statistics. Students admitted to one of these programs can choose me as thesis advisor or ask to be co-advised; students from other institutes of the College are welcome to attend group meetings before deciding.
