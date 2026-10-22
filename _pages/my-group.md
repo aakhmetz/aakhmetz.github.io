@@ -20,4 +20,6 @@ During the semester the group meets every Thursday at 12:30 in Room 545 of the C
 
 {% include group-members-script.html %}
 
+<p class="photo-credit">Background photo in the member cards: NTU College of Public Health, by the Office of the President, ROC (Taiwan), <a href="https://commons.wikimedia.org/wiki/File:2025.02.21_NTU_College_of_Public_Health.jpg">CC BY 2.0</a>, via Wikimedia Commons.</p>
+
 {% include group-photos.html %}

@@ -19,9 +19,12 @@
 #
 # Source: lab members sheet for semester 115-1 (autumn 2026). Emails are kept
 # out of this file on purpose, since the page is public.
+# The "1st year" / "2nd year" labels in the roles refer to that semester and
+# need updating each autumn.
 
 current:
   - name: "Andrei R. Akhmetzhanov"
+    chinese_name: "吳亞克"
     role: "Principal Investigator"
     details: "Associate Professor"
     photo: "profile.jpg"
@@ -34,7 +37,7 @@ current:
     details: "Global Health Program · since 2024"
     photo: ""
   - name: "Alex Ye"
-    role: "MSc student"
+    role: "MSc student, 2nd year"
     details: "Global Health Program · since 2025"
     photo: "members/alex-ye.jpg"
     bio: "Alex Ye is a Master's student in Global Health from Connecticut in the United States. Alex is interested in applying statistical and deep learning methods to public health initiatives like infectious disease modeling. Alex previously studied computer science and geography at Dartmouth College in the U.S., where he was captain of the swim team. Alex has one cat."
@@ -42,16 +45,17 @@ current:
     favorite_food: "poke"
     favorite_quote: "When it feels scary to jump, that is exactly when you jump."
   - name: "Evan Miksovsky"
-    role: "MSc student"
+    role: "MSc student, 2nd year"
     details: "Global Health Program · since 2025"
     photo: ""
   - name: "Floren Kurniawan"
-    role: "MSc student"
+    chinese_name: "翁明蘭"
+    role: "MSc student, 2nd year"
     details: "Epidemiology and Preventive Medicine · since 2025"
     photo: ""
   - name: "Shih-Ping Chiu"
     chinese_name: "邱詩蘋"
-    role: "MSc student"
+    role: "MSc student, 2nd year"
     details: "Health Data Analytics and Statistics · since 2026 · administrative assistant"
     photo: "members/shih-ping-chiu.jpg"
     bio: "Hello! I am Shih-Ping. I am interested in infectious disease modeling and data analysis, particularly in understanding disease transmission. I enjoy playing baseball and exploring the world in my free time."
@@ -60,21 +64,22 @@ current:
     favorite_quote: "Carpe diem. Seize the day. Make your lives extraordinary."
     quote_source: "Dead Poets Society"
   - name: "Aaron Arizala"
-    role: "MSc student"
+    role: "MSc student, 1st year"
     details: "Global Health Program · since 2026"
     photo: ""
   - name: "Alejandro Gomez"
-    role: "MSc student"
+    chinese_name: "金亞力"
+    role: "MSc student, 1st year"
     details: "Global Health Program · since 2026"
     photo: ""
 
 friends:
   - name: "Nature Huang"
-    role: "MSc student"
+    role: "MSc student, 1st year"
     details: "Health Data Analytics and Statistics · in the group since 2024 · advised by Prof. Tzu-Pin Lu"
     photo: ""
   - name: "Marian Yeh"
-    role: "MSc student"
+    role: "MSc student, 1st year"
     details: "Health Data Analytics and Statistics · in the group since 2026 · administrative assistant · advised by Prof. Anne Feng"
     photo: ""
   - name: "Andy Chu"
@@ -84,7 +89,8 @@ friends:
 
 on_leave:
   - name: "Tim Hsiao"
-    role: "MSc student"
+    chinese_name: "蕭宇廷"
+    role: "MSc student, 2nd year"
     details: "Health Data Analytics and Statistics · since 2024 · on exchange at Kyoto University"
     photo: ""
   - name: "Jonathan Dushoff"
