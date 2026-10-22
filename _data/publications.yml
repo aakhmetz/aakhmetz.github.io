@@ -1,7 +1,86 @@
-# Peer-reviewed publications (last 5 years, newest first)
-# Section I: Original research
+# Publications shown on /publications/ (rendered by _pages/publications.html).
+#
+# Peer-reviewed articles and letters since 2020, newest first, followed by
+# preprints. Entries are grouped by year on the page and "Akhmetzhanov AR" is
+# highlighted automatically.
+#
+# Fields: id (any unique label), authors (Vancouver style), title, journal,
+# year, volume, issue, pages, doi, type ("original" = peer-reviewed article or
+# letter; "preprint" = not yet peer-reviewed). Leave volume/issue/pages as ""
+# when unknown; they are then omitted from the citation.
+#
+# Earlier work (2005-2019) is not listed here; the page links to Google
+# Scholar, ORCID and researchmap for the complete list.
 
-- id: ShaoAkhm2025
+# ---------------------------------------------------------------- 2026
+- id: AkhmDush2026
+  authors: "Akhmetzhanov AR, Dushoff J, Thompson RN"
+  title: "Transmission potential of Andes virus"
+  journal: "The Lancet Microbe"
+  year: 2026
+  volume: ""
+  issue: ""
+  pages: "101549"
+  doi: "10.1016/j.lanmic.2026.101549"
+  type: "original"
+
+- id: dePaAkhm2026
+  authors: "de Padua B, Akhmetzhanov AR"
+  title: "Estimated transmissibility and case fatality rate of Bundibugyo virus, Uganda, 2007"
+  journal: "Emerging Infectious Diseases"
+  year: 2026
+  volume: "32"
+  issue: "10"
+  pages: ""
+  doi: "10.3201/eid3210.261175"
+  type: "original"
+
+- id: AkhmdePa2026a
+  authors: "Akhmetzhanov AR, de Padua B, Dushoff J"
+  title: "Serial interval and intervention efficiency in pertussis outbreak, South Korea, 2024"
+  journal: "Emerging Infectious Diseases"
+  year: 2026
+  volume: "32"
+  issue: "5"
+  pages: ""
+  doi: "10.3201/eid3205.251304"
+  type: "original"
+
+- id: FungLian2026
+  authors: "Fung ICH, Liang H, Pierce KJ, Kraay ANM, Kwok KO, Akhmetzhanov AR, Baiden FE, Unwin HJT, Kengne FB, Alhassan F, Chowell G"
+  title: "Excess mortality in Mainland China after the end of the Zero COVID policy: a systematic review"
+  journal: "Epidemiology and Infection"
+  year: 2026
+  volume: "154"
+  issue: ""
+  pages: ""
+  doi: "10.1017/S0950268826101022"
+  type: "original"
+
+- id: AkhmdePa2026b
+  authors: "Akhmetzhanov AR, de Padua B, Wong CS, Thompson RN"
+  title: "First documented outbreak of bongkrekic acid food poisoning in Taiwan, March–April 2024"
+  journal: "Journal of Infection and Public Health"
+  year: 2026
+  volume: "19"
+  issue: "2"
+  pages: "103056"
+  doi: "10.1016/j.jiph.2025.103056"
+  type: "original"
+
+# ---------------------------------------------------------------- 2025
+- id: AkhmChen2025
+  authors: "Akhmetzhanov AR, Cheng HY, Cheng G, Dushoff J"
+  title: "Consolidating estimates of the incubation period for Omicron subvariants from the literature and their comparison to the estimate from Taiwan: a systematic review and meta-analysis, September 2024"
+  journal: "Influenza and Other Respiratory Viruses"
+  year: 2025
+  volume: "19"
+  issue: "11"
+  pages: "e70171"
+  doi: "10.1111/irv.70171"
+  type: "original"
+
+- id: ShaoAkhm2025b
   authors: "Shao YY, Akhmetzhanov AR"
   title: "Authors' reply to the Letter \"Reevaluating the Role of Demographic and Etiological Factors in Immune Checkpoint Inhibitor Therapy for Advanced Hepatocellular Carcinoma\""
   journal: "Liver Cancer"
@@ -10,6 +89,17 @@
   issue: ""
   pages: ""
   doi: "10.1159/000547294"
+  type: "original"
+
+- id: ShaoAkhm2025a
+  authors: "Shao YY, Akhmetzhanov AR"
+  title: "Demographics and immunotherapy efficacy for advanced hepatocellular carcinoma: a systematic review and meta-analysis of phase III clinical trials"
+  journal: "Liver Cancer"
+  year: 2025
+  volume: "14"
+  issue: "3"
+  pages: "302-310"
+  doi: "10.1159/000542576"
   type: "original"
 
 - id: dePaAkhm2025
@@ -23,6 +113,7 @@
   doi: "10.1016/S2214-109X(24)00555-2"
   type: "original"
 
+# ---------------------------------------------------------------- 2024
 - id: CharPark2024
   authors: "Charniga K, Park SW, Akhmetzhanov AR, Cori A, Dushoff J, et al."
   title: "Best practices for estimating and reporting epidemiological delay distributions of infectious diseases"
@@ -34,20 +125,20 @@
   doi: "10.1371/journal.pcbi.1012520"
   type: "original"
 
-- id: ShaoAkhm2024
-  authors: "Shao YY, Akhmetzhanov AR"
-  title: "Demographics and Immunotherapy Efficacy for Advanced Hepatocellular carcinoma: A Systematic Review and Meta-Analysis of Phase III Clinical Trials"
-  journal: "Liver Cancer"
+- id: WuWu2024
+  authors: "Wu YL, Wu YC, Akhmetzhanov AR, Wu MY, Lin YF, Lin CC"
+  title: "Urban–rural health disparity among patients with chronic kidney disease: a cross-sectional community-based study from 2012 to 2019"
+  journal: "BMJ Open"
   year: 2024
-  volume: ""
-  issue: ""
-  pages: ""
-  doi: "10.1159/000542576"
+  volume: "14"
+  issue: "7"
+  pages: "e082959"
+  doi: "10.1136/bmjopen-2023-082959"
   type: "original"
 
 - id: PoncLint2024
   authors: "Ponce L, Linton NM, Toh WH, Cheng HY, Thompson RN, Akhmetzhanov AR, Dushoff J"
-  title: "Incubation Period and Serial Interval of Mpox in 2022 Global Outbreak Compared with Historical Estimates"
+  title: "Incubation period and serial interval of mpox in 2022 global outbreak compared with historical estimates"
   journal: "Emerging Infectious Diseases"
   year: 2024
   volume: "30"
@@ -58,7 +149,7 @@
 
 - id: ChengAkhm2024
   authors: "Cheng G, Akhmetzhanov AR"
-  title: "Data science for infectious disease data analytics: an introduction with R, by Lily Wang"
+  title: "Data science for infectious disease data analytics: an introduction with R, by Lily Wang (book review)"
   journal: "Biometrics"
   year: 2024
   volume: "80"
@@ -69,7 +160,7 @@
 
 - id: AkhmWu2024
   authors: "Akhmetzhanov AR, Wu PH"
-  title: "Transmission potential of mpox in Mainland China, June-July 2023: estimating reproduction number during the initial phase of the epidemic"
+  title: "Transmission potential of mpox in Mainland China, June–July 2023: estimating reproduction number during the initial phase of the epidemic"
   journal: "PeerJ"
   year: 2024
   volume: "12"
@@ -91,15 +182,16 @@
 
 - id: ChengAkhm2024b
   authors: "Cheng HY, Akhmetzhanov AR, Dushoff J"
-  title: "SARS-CoV-2 incubation period during the Omicron BA.5–dominant period in Japan (Letter to the Editor)"
+  title: "SARS-CoV-2 incubation period during the Omicron BA.5–dominant period in Japan (letter)"
   journal: "Emerging Infectious Diseases"
   year: 2024
   volume: "30"
   issue: "1"
-  pages: ""
+  pages: "206-207"
   doi: "10.3201/eid3001.230208"
   type: "original"
 
+# ---------------------------------------------------------------- 2023
 - id: WongChen2023
   authors: "Wong CS, Chen TT, Akhmetzhanov AR, Hu PJ, Wu MS, Wu MY"
   title: "A national case-crossover study on the risk of kidney injury requiring dialysis after sepsis"
@@ -111,6 +203,7 @@
   doi: "10.3390/jcm12154950"
   type: "original"
 
+# ---------------------------------------------------------------- 2022
 - id: LintAkhm2022
   authors: "Linton NM, Akhmetzhanov AR, Nishiura H"
   title: "Correlation between times to SARS-CoV-2 symptom onset and secondary transmission undermines epidemic control efforts"
@@ -120,6 +213,17 @@
   issue: ""
   pages: "100655"
   doi: "10.1016/j.epidem.2022.100655"
+  type: "original"
+
+- id: AkhmChen2022
+  authors: "Akhmetzhanov AR, Cheng HY, Linton NM, Ponce L, Jian SW, Lin HH"
+  title: "Transmission dynamics and effectiveness of control measures during COVID-19 surge, Taiwan, April–August 2021"
+  journal: "Emerging Infectious Diseases"
+  year: 2022
+  volume: "28"
+  issue: "10"
+  pages: "2051-2059"
+  doi: "10.3201/eid2810.220456"
   type: "original"
 
 - id: AkhmPonc2022
@@ -133,19 +237,8 @@
   doi: "10.1016/j.ijid.2022.07.044"
   type: "original"
 
-- id: AkhmChen2022
-  authors: "Akhmetzhanov AR, Cheng H, Linton NM, Ponce L, Jian S, Lin H"
-  title: "Transmission Dynamics and Effectiveness of Control Measures during COVID-19 Surge, Taiwan, April–August 2021"
-  journal: "Emerging Infectious Diseases"
-  year: 2022
-  volume: "28"
-  issue: "10"
-  pages: "2051-2059"
-  doi: "10.3201/eid2810.220456"
-  type: "original"
-
 - id: KinoJung2022
-  authors: "Kinoshita R, Jung S-m, Kobayashi T, Akhmetzhanov AR, Nishiura H"
+  authors: "Kinoshita R, Jung SM, Kobayashi T, Akhmetzhanov AR, Nishiura H"
   title: "Epidemiology of coronavirus disease 2019 (COVID-19) in Japan during the first and second waves"
   journal: "Mathematical Biosciences and Engineering"
   year: 2022
@@ -156,18 +249,18 @@
   type: "original"
 
 - id: LintLove2022
-  authors: "Linton NM, Lovell-Read F, Southall E, Lee H, Akhmetzhanov AR, Thompson RN, Nishiura H"
+  authors: "Linton NM, Lovell-Read FA, Southall E, Lee H, Akhmetzhanov AR, Thompson RN, Nishiura H"
   title: "When do epidemics end? Scientific insights from mathematical modelling studies"
   journal: "Centaurus"
   year: 2022
   volume: "64"
   issue: "1"
-  pages: "31-59"
+  pages: "31-60"
   doi: "10.1484/J.CNT.5.130125"
   type: "original"
 
 - id: MiyaJung2022
-  authors: "Miyama T, Jung S-m, Hayashi K, Anzai A, Kinoshita R, Kobayashi T, Linton NM, Suzuki A, Yang Y, Yuan B, Kayano T, Akhmetzhanov AR, Nishiura H"
+  authors: "Miyama T, Jung SM, Hayashi K, Anzai A, Kinoshita R, Kobayashi T, Linton NM, Suzuki A, Yang Y, Yuan B, Kayano T, Akhmetzhanov AR, Nishiura H"
   title: "Phenomenological and mechanistic models for predicting early transmission data of COVID-19"
   journal: "Mathematical Biosciences and Engineering"
   year: 2022
@@ -177,6 +270,7 @@
   doi: "10.3934/mbe.2022096"
   type: "original"
 
+# ---------------------------------------------------------------- 2021
 - id: JungEndo2021
   authors: "Jung SM, Endo A, Akhmetzhanov AR, Nishiura H"
   title: "Predicting the effective reproduction number of COVID-19: inference using human mobility, temperature, and risk awareness"
@@ -191,7 +285,7 @@
 - id: Akhm2021
   authors: "Akhmetzhanov AR"
   title: "Estimation of delay-adjusted all-cause excess mortality in the USA: March–December 2020"
-  journal: "Epidemiology & Infection"
+  journal: "Epidemiology and Infection"
   year: 2021
   volume: "149"
   issue: ""
@@ -200,7 +294,7 @@
   type: "original"
 
 - id: AkhmJung2021
-  authors: "Akhmetzhanov AR, Jung S-m, Cheng H-Y, Thompson RN"
+  authors: "Akhmetzhanov AR, Jung SM, Cheng HY, Thompson RN"
   title: "A hospital-related outbreak of SARS-CoV-2 associated with variant Epsilon (B.1.429) in Taiwan: transmission potential and outbreak containment under intensified contact tracing, January–February 2021"
   journal: "International Journal of Infectious Diseases"
   year: 2021
@@ -222,8 +316,8 @@
   type: "original"
 
 - id: AkhmMizu2021
-  authors: "Akhmetzhanov AR, Mizumoto K, Jung S-m, Linton NM, Omori R, Nishiura H"
-  title: "Estimation of the actual incidence of coronavirus disease (COVID-19) in emergent hotspots: The example of Hokkaido, Japan during February–March 2020"
+  authors: "Akhmetzhanov AR, Mizumoto K, Jung SM, Linton NM, Omori R, Nishiura H"
+  title: "Estimation of the actual incidence of coronavirus disease (COVID-19) in emergent hotspots: the example of Hokkaido, Japan during February–March 2020"
   journal: "Journal of Clinical Medicine"
   year: 2021
   volume: "10"
@@ -232,9 +326,10 @@
   doi: "10.3390/jcm10112392"
   type: "original"
 
+# ---------------------------------------------------------------- 2020
 - id: Akhm2020
   authors: "Akhmetzhanov AR"
-  title: "Large SARS-CoV-2 Outbreak Caused by Asymptomatic Traveler, China (Letter to the Editor)"
+  title: "Large SARS-CoV-2 outbreak caused by asymptomatic traveler, China (letter)"
   journal: "Emerging Infectious Diseases"
   year: 2020
   volume: "26"
@@ -244,7 +339,7 @@
   type: "original"
 
 - id: KinoAnza2020
-  authors: "Kinoshita R, Anzai A, Jung S-m, Linton NM, Miyama T, Kobayashi T, Hayashi K, Suzuki A, Yang Y, Akhmetzhanov AR, Nishiura H"
+  authors: "Kinoshita R, Anzai A, Jung SM, Linton NM, Miyama T, Kobayashi T, Hayashi K, Suzuki A, Yang Y, Akhmetzhanov AR, Nishiura H"
   title: "Containment, contact tracing and asymptomatic transmission of novel coronavirus disease (COVID-19): a modelling study"
   journal: "Journal of Clinical Medicine"
   year: 2020
@@ -266,13 +361,13 @@
   type: "original"
 
 - id: NishKoba2020a
-  authors: "Nishiura H, Kobayashi T, Suzuki A, Jung S-m, Hayashi K, Kinoshita R, Yang Y, Yuan Y, Akhmetzhanov AR, Linton NM, Miyama T"
+  authors: "Nishiura H, Kobayashi T, Miyama T, Suzuki A, Jung SM, Hayashi K, Kinoshita R, Yang Y, Yuan B, Akhmetzhanov AR, Linton NM"
   title: "Estimation of the asymptomatic ratio of novel coronavirus infections (COVID-19)"
   journal: "International Journal of Infectious Diseases"
   year: 2020
-  volume: ""
+  volume: "94"
   issue: ""
-  pages: ""
+  pages: "154-155"
   doi: "10.1016/j.ijid.2020.03.020"
   type: "original"
 
@@ -287,30 +382,19 @@
   doi: "10.1016/j.ijid.2020.02.060"
   type: "original"
 
-- id: KobaJung2020
-  authors: "Kobayashi T, Jung S-m, Linton NM, Kinoshita R, Hayashi K, Miyama K, Anzai A, Yang Y, Yuan B, Akhmetzhanov AR, Suzuki A, Nishiura H"
-  title: "Communicating the risk of death from novel coronavirus disease (COVID-19)"
+- id: JungKino2020
+  authors: "Jung SM, Kinoshita R, Thompson RN, Linton NM, Yang Y, Akhmetzhanov AR, Nishiura H"
+  title: "Epidemiological identification of a novel pathogen in real time: analysis of the atypical pneumonia outbreak in Wuhan, China, 2019–2020"
   journal: "Journal of Clinical Medicine"
   year: 2020
   volume: "9"
-  issue: "2"
-  pages: "538"
-  doi: "10.3390/jcm9020538"
-  type: "original"
-
-- id: LintKoba2020
-  authors: "Linton NM, Kobayashi T, Yang Y, Hayashi K, Akhmetzhanov AR, Jung S-m, Yuan B, Kinoshita R, Nishiura H"
-  title: "Incubation period and other epidemiological characteristics of 2019 novel coronavirus Infections with right truncation: A statistical analysis of publicly available case data"
-  journal: "Journal of Clinical Medicine"
-  year: 2020
-  volume: "9"
-  issue: "2"
-  pages: "538"
-  doi: "10.3390/jcm9020538"
+  issue: "3"
+  pages: "637"
+  doi: "10.3390/jcm9030637"
   type: "original"
 
 - id: AnzaKoba2020
-  authors: "Anzai A, Kobayashi T, Linton NM, Kinoshita R, Hayashi K, Suzuki A, Yang Y, Jung S-m, Miyama T, Akhmetzhanov AR, Nishiura H"
+  authors: "Anzai A, Kobayashi T, Linton NM, Kinoshita R, Hayashi K, Suzuki A, Yang Y, Jung SM, Miyama T, Akhmetzhanov AR, Nishiura H"
   title: "Assessing the impact of reduced travel on exportation dynamics of novel coronavirus infection (COVID-19)"
   journal: "Journal of Clinical Medicine"
   year: 2020
@@ -320,9 +404,20 @@
   doi: "10.3390/jcm9020601"
   type: "original"
 
-- id: JungAkhm2020
-  authors: "Jung S-m, Akhmetzhanov AR, Hayashi K, Linton NM, Yang Y, Yuan B, Kobayashi T, Kinoshita R, Nishiura H"
-  title: "Real-time estimation of the risk of death from novel coronavirus (COVID-19) Infection: Inference using exported cases"
+- id: KobaJung2020
+  authors: "Kobayashi T, Jung SM, Linton NM, Kinoshita R, Hayashi K, Miyama T, Anzai A, Yang Y, Yuan B, Akhmetzhanov AR, Suzuki A, Nishiura H"
+  title: "Communicating the risk of death from novel coronavirus disease (COVID-19)"
+  journal: "Journal of Clinical Medicine"
+  year: 2020
+  volume: "9"
+  issue: "2"
+  pages: "580"
+  doi: "10.3390/jcm9020580"
+  type: "original"
+
+- id: LintKoba2020
+  authors: "Linton NM, Kobayashi T, Yang Y, Hayashi K, Akhmetzhanov AR, Jung SM, Yuan B, Kinoshita R, Nishiura H"
+  title: "Incubation period and other epidemiological characteristics of 2019 novel coronavirus infections with right truncation: a statistical analysis of publicly available case data"
   journal: "Journal of Clinical Medicine"
   year: 2020
   volume: "9"
@@ -331,9 +426,20 @@
   doi: "10.3390/jcm9020538"
   type: "original"
 
+- id: JungAkhm2020
+  authors: "Jung SM, Akhmetzhanov AR, Hayashi K, Linton NM, Yang Y, Yuan B, Kobayashi T, Kinoshita R, Nishiura H"
+  title: "Real-time estimation of the risk of death from novel coronavirus (COVID-19) infection: inference using exported cases"
+  journal: "Journal of Clinical Medicine"
+  year: 2020
+  volume: "9"
+  issue: "2"
+  pages: "523"
+  doi: "10.3390/jcm9020523"
+  type: "original"
+
 - id: NishLint2020b
   authors: "Nishiura H, Linton NM, Akhmetzhanov AR"
-  title: "Initial cluster of novel coronavirus (2019-nCoV) infections in Wuhan, China Is consistent with substantial human-to-human transmission"
+  title: "Initial cluster of novel coronavirus (2019-nCoV) infections in Wuhan, China is consistent with substantial human-to-human transmission"
   journal: "Journal of Clinical Medicine"
   year: 2020
   volume: "9"
@@ -343,8 +449,8 @@
   type: "original"
 
 - id: NishKoba2020b
-  authors: "Nishiura H, Kobayashi T, Yang Y, Hayashi K, Miyama T, Kinoshita R, Linton NM, Jung S-m, Yuan B, Suzuki A, Akhmetzhanov AR"
-  title: "The rate of underascertainment of novel coronavirus (2019-nCoV) infection: Estimation using Japanese passengers data on evacuation flights"
+  authors: "Nishiura H, Kobayashi T, Yang Y, Hayashi K, Miyama T, Kinoshita R, Linton NM, Jung SM, Yuan B, Suzuki A, Akhmetzhanov AR"
+  title: "The rate of underascertainment of novel coronavirus (2019-nCoV) infection: estimation using Japanese passengers data on evacuation flights"
   journal: "Journal of Clinical Medicine"
   year: 2020
   volume: "9"
@@ -354,8 +460,8 @@
   type: "original"
 
 - id: NishJung2020
-  authors: "Nishiura H, Jung S-m, Linton NM, Kinoshita R, Yang Y, Hayashi K, Kobayashi T, Yuan B, Akhmetzhanov AR"
-  title: "The extent of transmission of novel coronavirus in Wuhan, China"
+  authors: "Nishiura H, Jung SM, Linton NM, Kinoshita R, Yang Y, Hayashi K, Kobayashi T, Yuan B, Akhmetzhanov AR"
+  title: "The extent of transmission of novel coronavirus in Wuhan, China, 2020"
   journal: "Journal of Clinical Medicine"
   year: 2020
   volume: "9"
@@ -364,13 +470,25 @@
   doi: "10.3390/jcm9020330"
   type: "original"
 
-- id: JungKino2020
-  authors: "Jung S-m, Kinoshita R, Thompson RN, Linton NM, Yang Y, Akhmetzhanov AR, Nishiura H"
-  title: "Epidemiological Identification of a novel pathogen in real time: analysis of the atypical pneumonia outbreak in Wuhan, China, 2019–2020"
-  journal: "Journal of Clinical Medicine"
-  year: 2020
-  volume: "9"
-  issue: "3"
-  pages: "637"
-  doi: "10.3390/jcm9030637"
-  type: "original"
+# ---------------------------------------------------------------- preprints
+- id: MarlAkhm2024pre
+  authors: "Marlow J, Akhmetzhanov AR"
+  title: "Clusters of SARS-CoV-2 infections in quarantine hotels in Taiwan with presumptive environmental mode of transmission, December 2021"
+  journal: "Authorea preprint"
+  year: 2024
+  volume: ""
+  issue: ""
+  pages: ""
+  doi: "10.22541/au.172167893.33874952/v1"
+  type: "preprint"
+
+- id: JungChen2024pre
+  authors: "Jung SM, Cheng G, Wu YC, Akhmetzhanov AR"
+  title: "An alternative study design may help to derive unbiased estimates in the population-based cohort study of individuals diagnosed with tuberculosis infection after screening in South Korea, 2015–2020"
+  journal: "Authorea preprint"
+  year: 2024
+  volume: ""
+  issue: ""
+  pages: ""
+  doi: "10.22541/au.172004448.85146221/v2"
+  type: "preprint"

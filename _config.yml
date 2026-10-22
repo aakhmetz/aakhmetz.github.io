@@ -22,7 +22,7 @@ repository               : "aakhmetz/aakhmetz.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Andrei R. Akhmetzhanov (吳亞克)"
   pronouns         :
   bio              : "Associate Professor in epidemiology and mathematical modeling at National Taiwan University"
@@ -38,6 +38,8 @@ author:
   inspire-hep      :
   impactstory      :
   orcid            : "https://orcid.org/0000-0003-3269-7351"
+  researchmap      : "https://researchmap.jp/aakhmetz"
+  ntuscholars      : "https://scholars.lib.ntu.edu.tw/lucky-search?index=legacy-id&value=rp199804"
   semantic         :
   ssrn             :
   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=akhmetzhanov+AR"
@@ -163,6 +165,8 @@ include:
   - files
 exclude:
   - "*.sublime-project"
+  - .devcontainer
+  - docker-compose.yaml
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle

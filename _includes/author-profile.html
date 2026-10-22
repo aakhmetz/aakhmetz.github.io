@@ -56,6 +56,12 @@
       {% if author.orcid %}
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid ai-fw icon-pad-right"></i>ORCID</a></li>
       {% endif %}
+      {% if author.researchmap %}
+        <li><a href="{{ author.researchmap }}"><i class="fas fa-fw fa-id-card icon-pad-right" aria-hidden="true"></i>researchmap</a></li>
+      {% endif %}
+      {% if author.ntuscholars %}
+        <li><a href="{{ author.ntuscholars }}"><i class="fas fa-fw fa-university icon-pad-right" aria-hidden="true"></i>NTU Scholars</a></li>
+      {% endif %}
       {% if author.pubmed %}
         <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed ai-fw icon-pad-right"></i>PubMed</a></li>
       {% endif %}                        

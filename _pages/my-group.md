@@ -5,53 +5,20 @@ permalink: /my-group/
 author_profile: true
 ---
 
-## Current Members
+We are a small research group at the [Global Health Program](https://ghp.ntu.edu.tw/) and the [Institute of Epidemiology and Preventive Medicine](https://epm.ntu.edu.tw/web/index/index.jsp), College of Public Health, National Taiwan University. We analyze infectious disease outbreaks while they unfold, estimate how pathogens spread, and turn the results into evidence that public health agencies can use. NTU students interested in joining us can find details on the [Opportunities](/opportunities/) page.
 
-<div class="group-members">
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 1" class="member-avatar">
-    <p class="member-name">Teresa Lo<br>Administrative Assistant</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 2" class="member-avatar">
-    <p class="member-name">Bianca de Padua<br>Research Assistant, MSc 2025</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 3" class="member-avatar">
-    <p class="member-name">Member 3</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 4" class="member-avatar">
-    <p class="member-name">Member 4</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 5" class="member-avatar">
-    <p class="member-name">Member 5</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 6" class="member-avatar">
-    <p class="member-name">Member 6</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 7" class="member-avatar">
-    <p class="member-name">Member 7</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 8" class="member-avatar">
-    <p class="member-name">Member 8</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 9" class="member-avatar">
-    <p class="member-name">Member 9</p>
-  </div>
-  <div class="member-profile">
-    <img src="/images/member-placeholder.svg" alt="Profile picture placeholder for Member 10" class="member-avatar">
-    <p class="member-name">Member 10</p>
-  </div>
-</div>
+During the semester the group meets every Thursday at 12:30 in Room 545 of the College of Public Health for outbreak news, progress reports and practice talks. Visitors are welcome; please email ahead.
+
+## Current members
+
+{% include group-members.html %}
 
 ## Alumni
 
-- Gillian Cheng (Research and Administrative Assistant, 2023.09 - 2026.03)
-- Luis Ponce (MSc 2023; doctoral program @ Nanyang Technological University, Singapore, since 2024)
+<ul class="alumni-list">
+{% for m in site.data.members.alumni %}
+  <li><strong>{{ m.name }}</strong>, {{ m.role }}{% if m.details and m.details != '' %}. {{ m.details }}{% endif %}</li>
+{% endfor %}
+</ul>
 
+{% include group-photos.html %}

@@ -1,0 +1,16 @@
+# Group photos shown in the "Photos" section at the bottom of /my-group/,
+# in the order given here (put the newest first). The section is hidden while
+# this list is empty.
+#
+# Put the image files in images/group/ (JPEG, about 1600 px on the long side,
+# ideally under 500 KB each). Then add one entry per photo:
+#
+#   - file: "2025-12-christmas-potluck.jpg"   # file name inside images/group/
+#     caption: "Christmas potluck in Room 537"
+#     date: "December 2025"                   # free text, can be left as ""
+#
+# Remove the "#" in front of the entries below (or add new ones) to show them.
+#
+# - file: ""
+#   caption: ""
+#   date: ""

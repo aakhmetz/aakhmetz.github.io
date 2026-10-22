@@ -5,23 +5,32 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<h2>Original Research (Last 5 Years)</h2>
+<p class="wordwrap">Peer-reviewed articles and letters since 2020, newest first. The complete list, including earlier work on mathematical biology, optimal control and differential games (2005–2019), is on <a href="{{ site.author.googlescholar }}">Google Scholar</a>, <a href="{{ site.author.orcid }}">ORCID</a> and <a href="https://researchmap.jp/aakhmetz">researchmap</a>. Group members are shown in bold on the <a href="{{ base_path }}/my-group/">Group</a> page; here only the author line is highlighted.</p>
 
-<ol class="pub-list">
-{% for pub in site.data.publications %}
-  <li>
-    {% assign highlighted = pub.authors | replace: "Akhmetzhanov AR", "<strong>Akhmetzhanov AR</strong>" %}
-    {{ highlighted }}.
-    {{ pub.title }}.
-    <em>{{ pub.journal }}</em>.
-    {{ pub.year }}{% if pub.volume and pub.volume != "" %};{{ pub.volume }}{% if pub.issue and pub.issue != "" %}({{ pub.issue }}){% endif %}{% if pub.pages and pub.pages != "" %}:{{ pub.pages }}{% endif %}{% endif %}.
-    doi: <a href="https://doi.org/{{ pub.doi }}">{{ pub.doi }}</a>
-  </li>
+{% assign articles = site.data.publications | where: "type", "original" %}
+{% assign preprints = site.data.publications | where: "type", "preprint" %}
+
+<h2>Peer-reviewed articles</h2>
+
+{% assign current_year = 0 %}
+{% for pub in articles %}
+  {% if pub.year != current_year %}
+    {% unless forloop.first %}</ol>{% endunless %}
+    <h3 id="y{{ pub.year }}" class="pub-year">{{ pub.year }}</h3>
+    <ol class="pub-list">
+    {% assign current_year = pub.year %}
+  {% endif %}
+  <li>{% include publication-item.html pub=pub %}</li>
 {% endfor %}
 </ol>
+
+{% if preprints.size > 0 %}
+<h2>Preprints</h2>
+<ol class="pub-list">
+{% for pub in preprints %}
+  <li>{% include publication-item.html pub=pub %}</li>
+{% endfor %}
+</ol>
+{% endif %}

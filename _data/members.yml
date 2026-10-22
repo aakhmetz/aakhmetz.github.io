@@ -1,0 +1,102 @@
+# People shown on /my-group/ (rendered by _pages/my-group.md).
+#
+# Add a person as one entry under "current" or "alumni"; the page lists them in
+# the order given here. Fields:
+#   name     full name as it should appear
+#   role     position (e.g. "PhD student, Global Health Program")
+#   details  optional second line (degree and year, current position, topic)
+#   photo    optional file name under images/ (e.g. "members/jane-doe.jpg",
+#            square, about 600x600 px); leave "" to show the placeholder
+#
+# Optional fields that turn a card into a clickable popup with more details:
+#   chinese_name    shown next to the name in the popup
+#   bio             one short paragraph written by the member
+#   hobbies         free text
+#   favorite_food   free text
+#   favorite_quote  the quote without quotation marks
+#   quote_source    optional attribution for the quote
+#
+# Source: lab members sheet for semester 115-1 (autumn 2026). Emails are kept
+# out of this file on purpose, since the page is public.
+
+current:
+  - name: "Andrei R. Akhmetzhanov"
+    role: "Principal Investigator"
+    details: "Associate Professor, Global Health Program and Institute of Epidemiology and Preventive Medicine"
+    photo: "profile.jpg"
+  - name: "Bianca de Padua"
+    role: "Research Assistant"
+    details: "Full-time since 2023; MSc in Global Health, NTU, 2025"
+    photo: ""
+  - name: "Joseph Jatta"
+    role: "PhD student, Global Health Program"
+    details: "Since 2024"
+    photo: ""
+  - name: "Alex Ye"
+    role: "MSc student, Global Health Program"
+    details: "Since 2025"
+    photo: "members/alex-ye.jpg"
+    bio: "Alex Ye is a Master's student in Global Health from Connecticut in the United States. Alex is interested in applying statistical and deep learning methods to public health initiatives like infectious disease modeling. Alex previously studied computer science and geography at Dartmouth College in the U.S., where he was captain of the swim team. Alex has one cat."
+    hobbies: "swimming, hiking, writing"
+    favorite_food: "poke"
+    favorite_quote: "When it feels scary to jump, that is exactly when you jump."
+  - name: "Evan Miksovsky"
+    role: "MSc student, Global Health Program"
+    details: "Since 2025"
+    photo: ""
+  - name: "Floren Kurniawan"
+    role: "MSc student, Institute of Epidemiology and Preventive Medicine"
+    details: "Since 2025"
+    photo: ""
+  - name: "Shih-Ping Chiu"
+    chinese_name: "邱詩蘋"
+    role: "MSc student, Institute of Health Data Analytics and Statistics"
+    details: "Since 2026; administrative assistant"
+    photo: "members/shih-ping-chiu.jpg"
+    bio: "Hello! I am Shih-Ping. I am interested in infectious disease modeling and data analysis, particularly in understanding disease transmission. I enjoy playing baseball and exploring the world in my free time."
+    hobbies: "baseball, hiking, drums"
+    favorite_food: "mashed potato"
+    favorite_quote: "Carpe diem. Seize the day. Make your lives extraordinary."
+    quote_source: "Dead Poets Society"
+  - name: "Nature Huang"
+    role: "MSc student, Institute of Health Data Analytics and Statistics"
+    details: "In the group since 2024; advised by Prof. Tzu-Pin Lu"
+    photo: ""
+  - name: "Aaron Arizala"
+    role: "MSc student, Global Health Program"
+    details: "Since 2026"
+    photo: ""
+  - name: "Alejandro Gomez"
+    role: "MSc student, Global Health Program"
+    details: "Since 2026"
+    photo: ""
+  - name: "Marian Yeh"
+    role: "MSc student, Institute of Health Data Analytics and Statistics"
+    details: "Since 2026; administrative assistant"
+    photo: ""
+  - name: "Andy Chu"
+    role: "Research collaborator"
+    details: "Former undergraduate student, Department of Public Health; in the group since 2023"
+    photo: ""
+  - name: "Tim Hsiao"
+    role: "MSc student, Institute of Health Data Analytics and Statistics"
+    details: "Since 2024; currently on exchange at Kyoto University"
+    photo: ""
+  - name: "Jonathan Dushoff"
+    role: "Visiting Professor"
+    details: "McMaster University, Canada; visits the group every summer"
+    photo: ""
+
+alumni:
+  - name: "Sheng-Yen Hsieh"
+    role: "MSc, Institute of Epidemiology and Preventive Medicine, 2026"
+    details: "In the group 2024–2026"
+  - name: "Gillian Cheng"
+    role: "Research and Administrative Assistant, 2023–2026"
+    details: ""
+  - name: "Teresa Lo"
+    role: "Administrative Assistant, 2024–2026"
+    details: ""
+  - name: "Luis Ponce"
+    role: "MSc in Global Health, NTU, 2023"
+    details: "Doctoral student at Nanyang Technological University, Singapore, since 2024"

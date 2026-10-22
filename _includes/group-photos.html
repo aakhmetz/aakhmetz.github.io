@@ -1,0 +1,53 @@
+{% comment %}
+Photo gallery for /my-group/, rendered from _data/group_photos.yml.
+Files live in images/group/. Clicking a thumbnail opens the photo in a popup;
+left/right arrow keys move between photos. Hidden when the list is empty.
+{% endcomment %}
+{% assign photos = site.data.group_photos %}
+{% if photos and photos.size > 0 %}
+<h2 id="photos">Photos</h2>
+<div class="group-gallery">
+{% for ph in photos %}
+  <figure class="group-gallery__item">
+    <a href="/images/group/{{ ph.file }}" class="group-gallery__link" data-index="{{ forloop.index0 }}" data-caption="{{ ph.caption | escape }}{% if ph.date and ph.date != "" %} &middot; {{ ph.date | escape }}{% endif %}">
+      <img src="/images/group/{{ ph.file }}" alt="{{ ph.caption | escape }}" loading="lazy">
+    </a>
+    <figcaption>{{ ph.caption }}{% if ph.date and ph.date != "" %} <span class="group-gallery__date">{{ ph.date }}</span>{% endif %}</figcaption>
+  </figure>
+{% endfor %}
+</div>
+<div class="gallery-dialog-wrap">
+<dialog class="gallery-dialog" id="gallery-dialog" aria-label="Photo">
+  <div class="gallery-dialog__body">
+    <button class="member-dialog__close gallery-dialog__close" type="button" aria-label="Close">&times;</button>
+    <img src="" alt="" class="gallery-dialog__img">
+    <p class="gallery-dialog__caption"></p>
+  </div>
+</dialog>
+<script>
+(function () {
+  var links = document.querySelectorAll('.group-gallery__link');
+  var dlg = document.getElementById('gallery-dialog');
+  if (!links.length || !dlg || typeof dlg.showModal !== 'function') { return; }
+  var img = dlg.querySelector('.gallery-dialog__img');
+  var cap = dlg.querySelector('.gallery-dialog__caption');
+  var current = 0;
+  var show = function (i) {
+    current = (i + links.length) % links.length;
+    img.src = links[current].getAttribute('href');
+    img.alt = links[current].getAttribute('data-caption');
+    cap.innerHTML = links[current].getAttribute('data-caption');
+  };
+  Array.prototype.forEach.call(links, function (a, i) {
+    a.addEventListener('click', function (e) { e.preventDefault(); show(i); dlg.showModal(); });
+  });
+  dlg.querySelector('.gallery-dialog__close').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) { dlg.close(); } });
+  dlg.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { show(current + 1); }
+    if (e.key === 'ArrowLeft') { show(current - 1); }
+  });
+})();
+</script>
+</div>
+{% endif %}

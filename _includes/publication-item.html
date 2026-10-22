@@ -1,0 +1,7 @@
+{%- comment -%}
+One citation line for an entry of _data/publications.yml. Usage:
+  {% include publication-item.html pub=pub %}
+{%- endcomment -%}
+{%- assign p = include.pub -%}
+{%- assign highlighted = p.authors | replace: "Akhmetzhanov AR", "<strong>Akhmetzhanov AR</strong>" -%}
+{{ highlighted }}. {{ p.title }}. <em>{{ p.journal }}</em>. {{ p.year }}{% if p.volume and p.volume != "" %};{{ p.volume }}{% if p.issue and p.issue != "" %}({{ p.issue }}){% endif %}{% endif %}{% if p.pages and p.pages != "" %}:{{ p.pages }}{% endif %}.{% if p.doi and p.doi != "" %} <a href="https://doi.org/{{ p.doi }}">doi:{{ p.doi }}</a>{% endif %}
