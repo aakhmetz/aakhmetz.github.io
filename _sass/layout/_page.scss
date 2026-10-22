@@ -445,7 +445,7 @@ body.people .page__title {
 }
 
 .page__content .person__name {
-  margin: 1.1em 0 0.15em;
+  margin: 1.1em 0 0.4em;
   font-family: $sans-serif;
   font-size: 0.95em;
   font-weight: 700;
@@ -466,7 +466,7 @@ body.people .page__title {
 }
 
 .page__content .person__details {
-  margin: 0.15em 0 0;
+  margin: 0.35em 0 0;
   font-family: $sans-serif;
   font-size: $type-size-7;
   line-height: 1.35;
@@ -549,10 +549,112 @@ body.people .page__title {
   color: var(--global-text-color-light);
 }
 
-/* CV page: keep the period column on one line */
-body.cv .page__content table td:first-child,
-body.cv .page__content table th:first-child {
-  white-space: nowrap;
+/* Research page: figures from papers beside the text */
+body.research .page__content h2 {
+  clear: both;
+}
+
+.page__content .research-figure {
+  display: block;
+  float: right;
+  width: 42%;
+  max-width: 380px;
+  margin: 0.4em 0 1em 1.75em;
+
+  @include breakpoint(max-width $small) {
+    float: none;
+    width: 100%;
+    max-width: none;
+    margin: 1em 0 1.5em;
+  }
+
+  > a {
+    display: block;
+    border-bottom: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+    background: #fff;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  > a:hover img,
+  > a:focus-visible img {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  }
+
+  figcaption {
+    margin: 0.5em 0 0;
+    font-family: $sans-serif;
+    font-size: $type-size-7;
+    line-height: 1.45;
+    color: var(--global-text-color-light);
+  }
+}
+
+.page__content .research-figure--small {
+  width: 34%;
+  max-width: 300px;
+
+  @include breakpoint(max-width $small) {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* CV page: light tables in the same style as the rest of the site */
+body.cv .page__content {
+  table {
+    width: 100%;
+    margin: 0.5em 0 1.5em;
+    border: 0;
+    border-collapse: collapse;
+    background: transparent;
+    font-family: $sans-serif;
+    font-size: $type-size-6;
+  }
+
+  thead,
+  tbody,
+  tr {
+    background: transparent;
+  }
+
+  th,
+  td {
+    padding: 0.55em 1em 0.55em 0;
+    border: 0;
+    border-bottom: 1px solid var(--global-border-color);
+    background: transparent;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  th {
+    border-bottom-width: 2px;
+    font-weight: 700;
+    color: var(--global-text-color);
+  }
+
+  td:first-child,
+  th:first-child {
+    white-space: nowrap;
+  }
+
+  td:first-child {
+    font-weight: 700;
+    color: var(--global-text-color-light);
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-right: 0;
+  }
 }
 
 .member-dialog {

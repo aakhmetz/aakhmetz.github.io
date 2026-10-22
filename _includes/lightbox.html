@@ -1,0 +1,40 @@
+{% comment %}
+Shared popup image viewer. Any link on the page written as
+  <a href="image.jpg" data-lightbox data-caption="text">...</a>
+opens its image in a dialog; left/right arrow keys move between all such
+links, Esc or a click outside closes. Include once, at the end of the page.
+{% endcomment %}
+<div class="gallery-dialog-wrap">
+<dialog class="gallery-dialog" id="gallery-dialog" aria-label="Image">
+  <div class="gallery-dialog__body">
+    <button class="member-dialog__close gallery-dialog__close" type="button" aria-label="Close">&times;</button>
+    <img src="" alt="" class="gallery-dialog__img">
+    <p class="gallery-dialog__caption"></p>
+  </div>
+</dialog>
+<script>
+(function () {
+  var links = document.querySelectorAll('a[data-lightbox]');
+  var dlg = document.getElementById('gallery-dialog');
+  if (!links.length || !dlg || typeof dlg.showModal !== 'function') { return; }
+  var img = dlg.querySelector('.gallery-dialog__img');
+  var cap = dlg.querySelector('.gallery-dialog__caption');
+  var current = 0;
+  var show = function (i) {
+    current = (i + links.length) % links.length;
+    img.src = links[current].getAttribute('href');
+    img.alt = links[current].getAttribute('data-caption') || '';
+    cap.textContent = links[current].getAttribute('data-caption') || '';
+  };
+  Array.prototype.forEach.call(links, function (a, i) {
+    a.addEventListener('click', function (e) { e.preventDefault(); show(i); dlg.showModal(); });
+  });
+  dlg.querySelector('.gallery-dialog__close').addEventListener('click', function () { dlg.close(); });
+  dlg.addEventListener('click', function (e) { if (e.target === dlg) { dlg.close(); } });
+  dlg.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowRight') { show(current + 1); }
+    if (e.key === 'ArrowLeft') { show(current - 1); }
+  });
+})();
+</script>
+</div>

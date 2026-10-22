@@ -22,8 +22,6 @@ author_profile: true
 | 2009 – 2011 | Postdoctoral Fellow | BIOCORE team, Inria Sophia Antipolis-Méditerranée, France |
 | 2007 – 2008 | Visiting PhD student | Inria Sophia Antipolis-Méditerranée, France |
 
----
-
 ## Education
 
 | Period | Degree | Institution |
@@ -31,8 +29,6 @@ author_profile: true
 | 2006 – 2009 | Ph.D. in Mathematics and Physics | Moscow Institute of Physics and Technology, Russia (thesis at the Institute for Problems in Mechanics, Russian Academy of Sciences) |
 | 2004 – 2006 | M.Sc. in Applied Mathematics and Physics (with honors) | Moscow Institute of Physics and Technology, Russia |
 | 2000 – 2004 | B.Sc. in Applied Mathematics and Physics (with honors) | Moscow Institute of Physics and Technology, Russia |
-
----
 
 ## Research funding
 
@@ -44,8 +40,6 @@ author_profile: true
 | 2024 | Transmission of mpox in Taiwan | Taiwan Centers for Disease Control | Principal investigator |
 | 2022 – 2023 | COVID-19 transmission in Taiwan | NSTC | Principal investigator |
 | 2023 – 2026 | Genomic epidemiology of tuberculosis in Kaohsiung | NSTC | Co-principal investigator |
-
----
 
 ## Teaching
 
@@ -67,13 +61,9 @@ author_profile: true
 
 Students rated the elective courses between 4.56 and 5.00 out of 5. Recipient of the 2023 NTU Excellent Teaching Award for English-taught courses.
 
----
-
 ## Supervision
 
 Master's and doctoral students of the Global Health Program, the Institute of Epidemiology and Preventive Medicine and the Institute of Health Data Analytics and Statistics, as well as undergraduate students of the Department of Public Health. Students in the group have published first-author papers in *Emerging Infectious Diseases* (2024, 2026) and *The Lancet Global Health* (2025) and have received program awards and travel grants. See the [Group](/my-group/) page.
-
----
 
 ## Service
 
@@ -83,15 +73,11 @@ Master's and doctoral students of the Global Health Program, the Institute of Ep
 - Selection of candidates for Fulbright Taiwan student grants (2024)
 - Invited talks on COVID-19 for the Public Health Association of Taiwan and Fulbright Taiwan
 
----
-
 ## Editorial service
 
 - **BMC Medicine**, Editorial Board Member (2022–present)
 - **PLOS Neglected Tropical Diseases**, Editorial Board Member (2024–present)
 - Regular reviewer for *Emerging Infectious Diseases*; reviewer for over 250 manuscripts in epidemiology, infectious disease modeling and biostatistics ([Web of Science researcher profile](https://www.webofscience.com/wos/author/rid/B-5530-2013))
-
----
 
 ## Awards and recognition
 
@@ -99,8 +85,6 @@ Master's and doctoral students of the Global Health Program, the Institute of Ep
 - B.Sc. (2004) and M.Sc. (2006) diplomas with honors, Moscow Institute of Physics and Technology
 - First place (theoretical part), XII International Olympiad on Automatic Control (Baltic Olympiad), St. Petersburg, 2008
 - Award for a leading contribution by a young participant, 13th International Symposium on Dynamic Games and Applications, Wrocław, 2008
-
----
 
 ## Profiles
 

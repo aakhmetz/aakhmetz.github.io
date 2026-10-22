@@ -5,7 +5,7 @@ permalink: /opportunities/
 author_profile: true
 ---
 
-We welcome NTU students who want to learn how infectious disease outbreaks are analyzed with quantitative methods. The group is small, so everyone works on real outbreak data from the start, usually on questions that come directly from public health agencies. Group meetings are in English, and members come from the Global Health Program, the Institute of Epidemiology and Preventive Medicine, the Institute of Health Data Analytics and Statistics and the Department of Public Health.
+We welcome NTU students who want to learn how infectious disease outbreaks are analyzed with quantitative methods. Everyone in the group works on real outbreak data from the start, usually on questions that come directly from public health agencies. Group meetings are in English, and members come from the Global Health Program, the Institute of Epidemiology and Preventive Medicine, the Institute of Health Data Analytics and Statistics and the Department of Public Health.
 
 We do not have funded positions for postdoctoral researchers or external research assistants, and we do not run an open program for visiting researchers. Visits are arranged directly with colleagues we already work with (see below).
 
