@@ -1,6 +1,7 @@
 ---
 permalink: /cv/
 title: "CV"
+classes: cv
 author_profile: true
 ---
 

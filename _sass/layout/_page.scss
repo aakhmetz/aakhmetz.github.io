@@ -374,81 +374,185 @@
 
 
 /*
-   Group members
+   People page (group members, friends, alumni)
    ========================================================================== */
 
-.group-members {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5em;
-  margin: 1em 0 2em;
+body.people .page__title {
+  margin-bottom: 0.4em;
+  text-align: center;
 
-  @include breakpoint(max-width $small) {
-    grid-template-columns: 1fr;
-  }
-
-  @include breakpoint($small $medium) {
-    grid-template-columns: repeat(2, 1fr);
+  &::after {
+    content: "";
+    display: block;
+    width: 3.5rem;
+    height: 4px;
+    margin: 0.5em auto 0;
+    border-radius: 2px;
+    background: var(--global-base-color);
   }
 }
 
-.member-profile {
+.page__content .people-heading {
+  margin: 2.4em 0 0.4em;
+  padding-bottom: 0;
+  border-bottom: 0;
+  text-align: center;
+  font-size: $type-size-4;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 3px;
+    margin: 0.4em auto 0;
+    border-radius: 2px;
+    background: var(--global-base-color);
+    opacity: 0.6;
+  }
+}
+
+.people-note {
+  max-width: 36em;
+  margin: 0.8em auto 0;
+  text-align: center;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  color: var(--global-text-color-light);
+}
+
+.people-grid {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.75em 1.25em;
+  margin: 1.5em 0 1em;
+}
+
+.person {
+  flex: 0 0 13em;
+  max-width: 13em;
   text-align: center;
 }
 
-.member-avatar {
-  width: 80px;
-  height: 80px;
+.person__avatar {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid var(--global-border-color);
+  border: 3px solid var(--global-bg-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.member-name {
-  margin: 0.4em 0 0;
-  font-size: $type-size-7;
+.person__name {
+  margin: 0.75em 0 0.2em;
   font-family: $sans-serif;
-  word-break: break-word;
+  font-size: 0.95em;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--global-link-color);
 }
 
-.member-role {
+.person__cjk {
+  font-weight: 400;
+}
+
+.person__role {
+  margin: 0;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  line-height: 1.35;
+  color: var(--global-text-color);
+}
+
+.person__details {
+  margin: 0.2em 0 0;
+  font-family: $sans-serif;
+  font-size: $type-size-7;
+  line-height: 1.35;
   color: var(--global-text-color-light);
-  font-size: $type-size-8;
 }
 
-.alumni-list li {
-  margin-bottom: 0.4em;
-}
-
-/* clickable cards and their popup windows */
-.member-profile--clickable {
+.person--clickable {
   cursor: pointer;
-  border-radius: $border-radius;
-  transition: transform 0.15s ease;
 
-  &:hover,
   &:focus-visible {
     outline: none;
-    transform: translateY(-2px);
+  }
 
-    .member-avatar {
-      border-color: var(--global-base-color);
-      box-shadow: 0 0 0 3px rgba(21, 101, 192, 0.2);
-    }
+  &:hover .person__avatar,
+  &:focus-visible .person__avatar {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+  }
 
-    .member-more {
-      text-decoration: underline;
-    }
+  &:hover .person__name,
+  &:focus-visible .person__name {
+    text-decoration: underline;
   }
 }
 
-.member-more {
-  color: var(--global-link-color);
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6em 1em;
+  margin: 1.5em 0 2em;
+
+  @include breakpoint(max-width $small) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.alumnus {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  padding: 0.45em 1.1em 0.45em 0.5em;
+  border-radius: 999px;
+  background: rgba(128, 128, 128, 0.12);
+}
+
+.alumnus__avatar {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.alumnus__text {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0 0.75em;
+  min-width: 0;
   font-family: $sans-serif;
-  font-size: $type-size-8;
+  line-height: 1.3;
+}
+
+.alumnus__name {
+  font-size: $type-size-6;
+  font-weight: 700;
+}
+
+.alumnus__role {
+  font-size: $type-size-7;
+  color: var(--global-text-color-light);
+  text-align: right;
+}
+
+.alumnus__details {
+  flex-basis: 100%;
+  font-size: $type-size-7;
+  color: var(--global-text-color-light);
+}
+
+/* CV page: keep the period column on one line */
+body.cv .page__content table td:first-child,
+body.cv .page__content table th:first-child {
+  white-space: nowrap;
 }
 
 .member-dialog {
