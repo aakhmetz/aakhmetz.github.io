@@ -38,14 +38,14 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=TKQyHlMAAAAJ"
   inspire-hep      :
   impactstory      :
-  orcid            : "https://orcid.org/0000-0003-3269-7351"
+  orcid            :   # hidden from the sidebar; was https://orcid.org/0000-0003-3269-7351
   researchmap      : "https://researchmap.jp/aakhmetz"
   ntuscholars      : "https://scholars.lib.ntu.edu.tw/lucky-search?index=legacy-id&value=rp199804"
   semantic         :
   ssrn             :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=akhmetzhanov+AR"
+  pubmed           :   # hidden from the sidebar; was https://www.ncbi.nlm.nih.gov/pubmed/?term=akhmetzhanov+AR
   researchgate     :
-  scopus           : "https://www.scopus.com/authid/detail.uri?authorId=18833652300"
+  scopus           :   # hidden from the sidebar; was https://www.scopus.com/authid/detail.uri?authorId=18833652300
   zotero           :
 
   # Repositories and software development

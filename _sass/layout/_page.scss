@@ -374,18 +374,6 @@
 
 
 /*
-   Footer
-   ========================================================================== */
-
-/* The site has no footer content (_includes/footer.html is empty), but the
-   template pins .page__footer to the bottom of the window. Hide the empty box;
-   the scripts inside it still run. */
-.page__footer {
-  display: none;
-}
-
-
-/*
    People page (group members, friends, alumni)
    ========================================================================== */
 
