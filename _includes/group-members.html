@@ -15,7 +15,7 @@ once at the end of the page to activate the popups.
 {% if m.photo and m.photo != "" %}{% assign photo = "/images/" | append: m.photo %}{% else %}{% assign photo = "/images/member-placeholder.svg" %}{% endif %}
   <div class="person{% if has_popup %} person--clickable{% endif %}"{% if has_popup %} data-member="member-{{ include.group }}-{{ forloop.index }}" role="button" tabindex="0" aria-haspopup="dialog" title="More about {{ m.name }}"{% endif %}>
     <img src="{{ photo }}" alt="{{ m.name }}" class="person__avatar" loading="lazy">
-    <p class="person__name">{% if m.chinese_name %}<span class="person__cjk">{{ m.chinese_name }}</span> {% endif %}{{ m.name }}</p>
+    <p class="person__name">{% if m.chinese_name %}<span class="person__cjk">{{ m.chinese_name }}</span> {% endif %}<span class="person__en">{{ m.name }}</span></p>
     <p class="person__role">{{ m.role }}</p>
     {% if m.details and m.details != "" %}<p class="person__details">{{ m.details }}</p>{% endif %}
   </div>
@@ -30,7 +30,7 @@ once at the end of the page to activate the popups.
     <div class="member-dialog__body">
       <button class="member-dialog__close" type="button" aria-label="Close">&times;</button>
       <img src="{{ photo }}" alt="" class="member-dialog__photo">
-      <h3 class="member-dialog__name" id="member-{{ include.group }}-{{ forloop.index }}-name">{{ m.name }}{% if m.chinese_name %} <span class="member-dialog__cjk">{{ m.chinese_name }}</span>{% endif %}</h3>
+      <h3 class="member-dialog__name" id="member-{{ include.group }}-{{ forloop.index }}-name">{% if m.chinese_name %}<span class="member-dialog__cjk">{{ m.chinese_name }}</span> {% endif %}<span class="member-dialog__en">{{ m.name }}</span></h3>
       <p class="member-dialog__role">{{ m.role }}{% if m.details and m.details != "" %} &middot; {{ m.details }}{% endif %}</p>
       {% if m.bio %}<p class="member-dialog__bio">{{ m.bio }}</p>{% endif %}
       {% if m.hobbies or m.favorite_food or m.favorite_quote %}

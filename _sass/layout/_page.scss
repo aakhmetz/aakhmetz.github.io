@@ -374,6 +374,18 @@
 
 
 /*
+   Footer
+   ========================================================================== */
+
+/* The site has no footer content (_includes/footer.html is empty), but the
+   template pins .page__footer to the bottom of the window. Hide the empty box;
+   the scripts inside it still run. */
+.page__footer {
+  display: none;
+}
+
+
+/*
    People page (group members, friends, alumni)
    ========================================================================== */
 
@@ -455,6 +467,12 @@ body.people .page__title {
 
 .person__cjk {
   font-weight: 400;
+}
+
+/* keep the English name in one piece; a long bilingual name then breaks
+   between the Chinese and the English name, not inside the English one */
+.person__en {
+  display: inline-block;
 }
 
 .page__content .person__role {
@@ -742,7 +760,11 @@ body.cv .page__content {
 
 .member-dialog__cjk {
   font-weight: normal;
-  color: var(--global-text-color-light);
+}
+
+/* as on the cards: Chinese name first, English name kept in one piece */
+.member-dialog__en {
+  display: inline-block;
 }
 
 .member-dialog__role {

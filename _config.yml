@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Andrei R. Akhmetzhanov (吳亞克)"
+title                    : "吳亞克 Andrei R. Akhmetzhanov"
 title_separator          : "-"
-name                     : &name "Andrei R. Akhmetzhanov (吳亞克)"
+name                     : &name "吳亞克 Andrei R. Akhmetzhanov"
 description              : &description "Associate Professor, Global Health Program, National Taiwan University"
 url                      : https://aakhmetz.github.io
 baseurl                  : ""
@@ -23,7 +23,8 @@ repository               : "aakhmetz/aakhmetz.github.io"
 author:
   # Biographic information
   avatar           : "profile.jpg"
-  name             : "Andrei R. Akhmetzhanov (吳亞克)"
+  name             : "Andrei R. Akhmetzhanov"
+  chinese_name     : "吳亞克"
   pronouns         :
   bio              : "Associate Professor in epidemiology and mathematical modeling at National Taiwan University"
   location         : "Taipei, Taiwan"
@@ -143,8 +144,10 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :
-og_description           :
+og_image                 : og-image.png   # Social media default site image (lives in /images/)
+og_description           : "Real-time analysis and modeling of infectious disease outbreaks at the College of Public Health, National Taiwan University."
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
 social:
   type                   :
   name                   :
