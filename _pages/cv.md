@@ -39,7 +39,6 @@ author_profile: true
 | 2023 – 2025 | COVID-19 modeling: population immunity, case ascertainment and forecasting | Taiwan Centers for Disease Control | Principal investigator |
 | 2024 | Transmission of mpox in Taiwan | Taiwan Centers for Disease Control | Principal investigator |
 | 2022 – 2023 | COVID-19 transmission in Taiwan | NSTC | Principal investigator |
-| 2023 – 2026 | Genomic epidemiology of tuberculosis in Kaohsiung | NSTC | Co-principal investigator |
 
 ## Teaching
 

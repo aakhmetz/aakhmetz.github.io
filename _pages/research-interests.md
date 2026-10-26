@@ -75,7 +75,6 @@ Bayesian inference with Stan, survival analysis under truncation and censoring, 
 - NTU Higher Education Sprout Project, ensemble and AI-based methods for infectious disease forecasting, principal investigator, 2026
 - Taiwan CDC commissioned projects on COVID-19 modeling (2023–2025) and mpox transmission in Taiwan (2024), principal investigator
 - NSTC, COVID-19 transmission in Taiwan, principal investigator, 2022–2023
-- NSTC, genomic epidemiology of tuberculosis in Kaohsiung, co-principal investigator, 2023–2026
 
 ## Collaborators
 
