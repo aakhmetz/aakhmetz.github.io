@@ -6,7 +6,19 @@
   Array.prototype.forEach.call(cards, function (card) {
     var dlg = document.getElementById(card.getAttribute('data-member'));
     if (!dlg || typeof dlg.showModal !== 'function') { return; }
-    var open = function () { dlg.showModal(); };
+    var body = dlg.querySelector('.member-dialog__body');
+    var more = dlg.querySelector('.member-dialog__more');
+    // show the "more below" hint while part of the card is scrolled out of view
+    var update = function () {
+      dlg.classList.toggle('has-more', body.scrollHeight - body.scrollTop - body.clientHeight > 8);
+    };
+    var open = function () { dlg.showModal(); body.scrollTop = 0; update(); };
+    body.addEventListener('scroll', update);
+    window.addEventListener('resize', update);
+    Array.prototype.forEach.call(dlg.querySelectorAll('img'), function (im) { im.addEventListener('load', update); });
+    if (more) {
+      more.addEventListener('click', function () { body.scrollBy({ top: body.clientHeight * 0.7, behavior: 'smooth' }); });
+    }
     var onLink = function (e) { return e.target.closest && e.target.closest('a'); };
     card.addEventListener('click', function (e) { if (!onLink(e)) { open(); } });
     card.addEventListener('keydown', function (e) {

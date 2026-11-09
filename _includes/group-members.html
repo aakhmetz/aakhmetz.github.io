@@ -28,6 +28,8 @@ once at the end of the page to activate the popups.
 {% if m.photo and m.photo != "" %}{% assign photo = "/images/" | append: m.photo %}{% else %}{% assign photo = "/images/member-placeholder.svg" %}{% endif %}
   <dialog class="member-dialog" id="member-{{ include.group }}-{{ forloop.index }}" aria-labelledby="member-{{ include.group }}-{{ forloop.index }}-name">
     <button class="member-dialog__close" type="button" aria-label="Close">&times;</button>
+    <div class="member-dialog__fade" aria-hidden="true"></div>
+    <button class="member-dialog__more" type="button" aria-label="Scroll down for more" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
     <div class="member-dialog__body">
       <img src="{{ photo }}" alt="" class="member-dialog__photo">
       <h3 class="member-dialog__name" id="member-{{ include.group }}-{{ forloop.index }}-name">{% if m.chinese_name %}<span class="member-dialog__cjk">{{ m.chinese_name }}</span> {% endif %}<span class="member-dialog__en">{{ m.name }}</span>{% if m.email and m.email != "" %}{% include icon-mail.html email=m.email name=m.name %}{% endif %}</h3>

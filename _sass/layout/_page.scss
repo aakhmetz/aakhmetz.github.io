@@ -865,6 +865,108 @@ body.cv .page__content {
   }
 }
 
+/* hint that the card continues below: a fade and an arrow button, shown by
+   the script (class has-more) only while content is scrolled out of view */
+.member-dialog__fade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 5em;
+  background: linear-gradient(to bottom, transparent, var(--global-bg-color) 78%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.member-dialog__more {
+  position: absolute;
+  bottom: 0.7em;
+  left: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3em;
+  height: 2.3em;
+  margin: 0 0 0 -1.15em;
+  padding: 0;
+  border: 1px solid var(--global-border-color);
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  color: var(--global-link-color);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+
+  svg {
+    width: 1.15em;
+    height: 1.15em;
+  }
+}
+
+.member-dialog.has-more {
+  .member-dialog__fade {
+    opacity: 1;
+  }
+
+  .member-dialog__more {
+    opacity: 1;
+    pointer-events: auto;
+    animation: more-nudge 1.6s ease-in-out infinite;
+  }
+}
+
+@keyframes more-nudge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(4px);
+  }
+}
+
+/* shorter windows: a more compact card, so more of it fits without scrolling */
+@media (max-height: 820px) {
+  .member-dialog__body {
+    padding: 2.1em 2em 1.6em;
+
+    &::before {
+      height: 6em;
+    }
+  }
+
+  .member-dialog__photo {
+    width: 112px;
+    height: 112px;
+  }
+
+  .member-dialog__name {
+    margin-top: 0.4em;
+    font-size: 1.2em;
+  }
+
+  .member-dialog__role {
+    margin-bottom: 0.9em;
+  }
+
+  .member-dialog__bio {
+    font-size: 0.88em;
+    line-height: 1.5;
+  }
+
+  .member-dialog__facts {
+    gap: 0.4em 1.2em;
+    margin-top: 0.9em;
+    padding-top: 0.8em;
+    font-size: 0.88em;
+  }
+}
+
 /* group photo gallery */
 .group-gallery {
   display: grid;
