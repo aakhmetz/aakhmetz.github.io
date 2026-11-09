@@ -1,0 +1,2 @@
+{%- comment -%}Small email badge shown next to a member's name. Usage: {% include icon-mail.html email=m.email name=m.name %}{%- endcomment -%}
+<a class="member-mail" href="mailto:{{ include.email }}" title="Email {{ include.name }}" aria-label="Email {{ include.name }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3.5"></rect><path d="M4.5 8.5 12 13.5l7.5-5"></path></svg></a>
