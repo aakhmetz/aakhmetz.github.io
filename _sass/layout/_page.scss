@@ -742,6 +742,11 @@ body.cv .page__content {
 
 .member-dialog__body {
   position: relative;
+  /* scroll inside the card when it is taller than the window */
+  max-height: calc(100vh - 2rem);
+  max-height: calc(100dvh - 2rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
   padding: 3.25em 2.25em 2em;
   text-align: center;
 
