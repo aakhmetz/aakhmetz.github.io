@@ -1,4 +1,5 @@
-{% comment %}Activates the member popups; include once, after the last group-members.html include.{% endcomment %}
+{% comment %}Activates the member popups; include once, after the last group-members.html include.
+   NOTE: the live site compresses pages onto one line, so never use // comments in this script, only /* */.{% endcomment %}
 <div class="member-dialogs-script">
 <script>
 (function () {
@@ -8,7 +9,7 @@
     if (!dlg || typeof dlg.showModal !== 'function') { return; }
     var body = dlg.querySelector('.member-dialog__body');
     var more = dlg.querySelector('.member-dialog__more');
-    // show the "more below" hint while part of the card is scrolled out of view
+    /* show the "more below" hint while part of the card is scrolled out of view */
     var update = function () {
       dlg.classList.toggle('has-more', body.scrollHeight - body.scrollTop - body.clientHeight > 8);
     };
