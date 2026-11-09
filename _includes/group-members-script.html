@@ -7,8 +7,10 @@
     var dlg = document.getElementById(card.getAttribute('data-member'));
     if (!dlg || typeof dlg.showModal !== 'function') { return; }
     var open = function () { dlg.showModal(); };
-    card.addEventListener('click', open);
+    var onLink = function (e) { return e.target.closest && e.target.closest('a'); };
+    card.addEventListener('click', function (e) { if (!onLink(e)) { open(); } });
     card.addEventListener('keydown', function (e) {
+      if (onLink(e)) { return; }
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
     });
     dlg.querySelector('.member-dialog__close').addEventListener('click', function () { dlg.close(); });

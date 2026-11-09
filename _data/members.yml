@@ -17,6 +17,9 @@
 #   favorite_quote  the quote without quotation marks
 #   quote_source    optional attribution for the quote
 #
+# Optional contact, shown only with the member's consent:
+#   email           shown as an envelope icon under the name (card and popup)
+#
 # Source: lab members sheet for semester 115-1 (autumn 2026). Emails are kept
 # out of this file on purpose, since the page is public.
 # The "1st year" / "2nd year" labels in the roles refer to that semester and
@@ -85,7 +88,12 @@ friends:
   - name: "Marian Yeh"
     role: "MSc student, 1st year"
     details: "Health Data Analytics and Statistics · in the group since 2026 · administrative assistant · advised by Prof. Anne Feng"
-    photo: ""
+    photo: "members/marian-yeh.jpg"
+    email: "marian985522@gmail.com"
+    bio: "Hi! I'm Marian, a first-year master's student at National Taiwan University. I have a background in statistics and am currently exploring how data analysis and machine learning can help us better understand human health. I enjoy learning new things, taking on challenges, and finding creative ways to solve problems."
+    hobbies: "playing the piano, baking cakes"
+    favorite_food: "spaghetti carbonara"
+    favorite_quote: "In returning and rest you shall be saved; in quietness and in trust shall be your strength."
   - name: "Andy Chu"
     role: "Research collaborator"
     details: "Former undergraduate student, Department of Public Health · in the group since 2023"

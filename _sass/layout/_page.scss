@@ -479,6 +479,34 @@ body.people .page__title {
   color: var(--global-text-color-light);
 }
 
+/* contact icons under the name, on the card and in the popup */
+.page__content .person__links,
+.member-dialog__links {
+  position: relative;
+  margin: 0 0 0.35em;
+  font-size: 0.95em;
+  line-height: 1;
+
+  a {
+    display: inline-block;
+    padding: 0.15em 0.3em;
+    color: var(--global-link-color);
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+
+    &:hover,
+    &:focus-visible {
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+  }
+}
+
+.member-dialog__links {
+  margin: 0.35em 0 0;
+}
+
 .person--clickable {
   cursor: pointer;
 
